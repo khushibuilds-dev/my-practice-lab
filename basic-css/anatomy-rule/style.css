@@ -1,0 +1,14 @@
+h1{
+  font-size: 40px;
+  font-weight: bold;
+  border: 2px solid pink;
+  border-radius: 5px;
+  background-color: hotpink;
+  color: black;
+  padding: 20px;
+}
+h2{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}

@@ -27,3 +27,9 @@ del{
     font-size: 14px;
     color: grey;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

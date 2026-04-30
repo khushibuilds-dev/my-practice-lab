@@ -12,3 +12,10 @@ p{
     display: inline-block;
     padding: 5px 10px;
 }
+button{
+    background-color: #FFD814;
+    border: none;
+    padding: 8px 15px;
+    curser: pointer;
+    border-radius: 20px;
+}

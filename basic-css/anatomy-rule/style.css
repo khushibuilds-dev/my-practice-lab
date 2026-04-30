@@ -12,7 +12,9 @@ h1{
   color: black;
   padding: 20px;
   text-align: center;
-  display: inline;
+  display: block;
+  width: 300px;
+  margin: auto;
 }
 h2{
   font-size: 20px;

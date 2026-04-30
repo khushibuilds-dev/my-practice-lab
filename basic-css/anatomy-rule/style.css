@@ -25,13 +25,13 @@ p{
 }
 li{
   line-height: 2;
-  background-color: white;
-  border: 10px solid white;
-  border-radius: 15px;
-}
+  }
 ul{
   list-style: square; 
-}
+background-color: white;
+  border: 10px solid white;
+  border-radius: 15px;}
+
 li:hover{
   color: orangered;
 }

@@ -12,3 +12,15 @@ h2{
   font-weight: bold;
   color: black;
 }
+p{
+  color: black;
+}
+li{
+  line-height: 2;
+}
+ul{
+  list-style: square; 
+}
+li:hover{
+  color: orangered;
+}

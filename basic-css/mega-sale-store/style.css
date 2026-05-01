@@ -25,3 +25,11 @@ padding: 10px 20px;
 cursor: pointer;
 width: 100px;
 }
+.hero-section{
+    height: 300px;
+    background-color: lightgray;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

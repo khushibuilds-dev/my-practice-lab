@@ -33,3 +33,15 @@ width: 100px;
     justify-content: center;
     align-items: center;
 }
+h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.hero-btn{
+    font-size: 15px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

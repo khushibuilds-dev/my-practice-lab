@@ -1,7 +1,18 @@
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#232f3e;
+    color: white;
 }
 ul{
     display: flex;
+    list-style: none;
+    gap: 20px;
+}
+input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
 }

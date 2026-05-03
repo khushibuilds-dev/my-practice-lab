@@ -97,3 +97,11 @@ del{
     background-color: #f0a14e;
 
 }
+ nav ul li{
+    cursor: pointer;
+ }
+ nav ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #febd69;
+    gap: 20px;}

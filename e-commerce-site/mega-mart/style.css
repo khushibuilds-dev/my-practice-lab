@@ -45,3 +45,15 @@ h2{
     padding: 10px 20px;
     border-radius: 5px;
 }
+.products-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.product-card{
+    border: 1px solid #ddd;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}

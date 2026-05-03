@@ -105,3 +105,16 @@ del{
     cursor: pointer;
     color: #febd69;
     gap: 20px;}
+   
+footer{
+background-color: #232f3e;
+color: white;
+padding: 20px;
+text-align: center;
+} 
+
+   small:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #febd69;
+   } 

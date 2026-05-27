@@ -1,0 +1,19 @@
+.flex-direction{
+  display: flex;
+  background-color: lightcoral;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;}
+
+/* Sabhi justify wale boxes ke liye */
+
+.justify-content {
+    display: flex; /* Sabko flex banaya */
+    background-color: lightblue;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #333;
+    font-family: sans-serif;}

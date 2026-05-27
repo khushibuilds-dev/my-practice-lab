@@ -1,19 +1,53 @@
-.flex-direction{
-  display: flex;
-  background-color: lightcoral;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  color: white;
-  font-family: sans-serif;}
-
-/* Sabhi justify wale boxes ke liye */
-
-.justify-content {
-    display: flex; /* Sabko flex banaya */
-    background-color: lightblue;
+.flex-direction-container {
+    background-color: lightgoldenrodyellow;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
     color: #333;
-    font-family: sans-serif;}
+    font-family: sans-serif;
+}
+.justify-content-container {
+    background-color: lightcyan;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #333;
+    font-family: sans-serif;
+}
+.box{
+  background-color: lightgray;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  color: #333;
+  width: 50px;
+  height: 50px;
+  
+
+}
+.row-container{
+  display: flex;
+  flex-direction: row;
+}
+.column-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.row-reverse-container{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.column-reverse-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.flex-start-container{
+  display: flex;
+  justify-content: flex-start;
+}
+.flex-end-container{
+  display: flex;
+  justify-content: flex-end;
+}

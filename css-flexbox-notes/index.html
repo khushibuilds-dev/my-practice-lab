@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS flexbox notes</title>
@@ -22,19 +23,19 @@
         <!--yaha per flex property hai-->
         
         <h2>Flex-direction </h2>
-
+<p>Flex direction property ka sue ye batane ke liye karte hai ki content kis tarf chhiye.</p>
         <!--yaha per flex-direction property mai kya kya use kar sakte hai vo hai-->
         
-        <h3>1 Property- flex-direction: row;</h3>
-        <p> flex-direction: row;  property ka use karna padta hai ye batne ke liye ki contnet ki tarh chiye row chiye ya cloumn chiye row defalut hoti to agr row chaiye to kuch mat karo ye pahele se hai</p>
+        <h3>1. Property- flex-direction: row;</h3>
+        <p> flex-direction: row;  property ka use karte hai ye batane ke liye ki content  row mai chahiye or row defalut hoti to agr row chaiye to kuch mat karo ye pahele se hai. Row mai hamesa horizontal (leti hui line mai) mtlb left se right side mai hote hai</p>
         <div class="row-container">
           <div class="box">1</div>
           <div class="box">2</div>
           <div class="box">3</div>
         </div>
 
-        <h3>2 Property- flex-direction: column;</h3>
-        <p> flex-direction: column;  property ka use karna padta hai ye batne ke liye ki contnet ki tarh chiye row chiye ya cloumn chiye column defalut hoti to agr column chaiye to kuch mat karo ye pahele se hai</p>
+        <h3>2. Property- flex-direction: column;</h3>
+        <p> flex-direction: column;  property ka use karte hai ye batne ke liye ki content column mai chahiye. Column mai hamesa vertical(kadi line) mai content hote hai.mtlb uper se neche ke tarf hote hai. </p>
         <div class="column-container">
           <div class="box">1</div>
           <div class="box">2</div>
@@ -42,14 +43,14 @@
             </div>
         
         <h3>3 Property- flex-direction: row-reverse;</h3>
-        <p> flex-direction: row-reverse;  property ka use karna padta hai ye batne ke liye ki contnet ki tarh chiye row chiye ya cloumn chiye row defalut hoti to agr row chaiye to kuch mat karo ye pahele se hai</p>
+        <p> flex-direction: row-reverse;  property ka use karte hai ki content row reverse mai chahiye mtlb horizontal (leti hui) direction me ye right se left mai lekin utle ho jaise agr 1 se 6 tak box hai to vo 6 se 1 ho jayenge.</p>
         <div class="row-reverse-container">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
         </div>
         <h3>Property - flex-direction: column-reverse;</h3>
-        <p> flex-direction: column-reverse;  property ka use karna padta hai ye batne ke liye ki contnet ki tarh chiye row chiye ya cloumn chiye column defalut hoti to agr column chaiye to kuch mat karo ye pahele se hai</p>
+        <p> flex-direction: column-reverse;  property ka use karte hai ki content column reverse mai chaihiye mtlb vertical (kahdi line) mai lekin ultt hue bottom se top 1 se 6 hai to 6 se 1 ho jayega.  </p>
        <div class="column-reverse-container">
       <div class="box">1</div>
       <div class="box">2</div>
@@ -60,22 +61,23 @@
        <!-- justify-content property -->
 
        <h2>justify-content</h2>
+       <p>Justify content proper ka use main axis mai mtlb flex direction row hai to justity-content row ki hi direction mtlb left se right side mai content ka rakhega lekin agr flex direction column laga ho to justify content content ya box ko vertical mai top se bottom mai kahi bhi rakhega </p>
        <h3>1 Property- justify-content: flex-start;</h3>
-       <p>justify-content: flex-start;  property ka use ye batne ke liye kiya jata hai ki content ko container ke andar horizontal(padi ya leti hui) direction agr flex-direction row laga or varna agar flex direction column laga hai to vertical(khadi disha) me  container ke start (left side) me align karna hai.</p>
+       <p>justify-content: flex-start; property se hum box ko row ke according left se right mai or column ke direction ke according top se bottom mai  left side(start mai lekin upper) mai rakhat hai. </p>
 <div class="justify-content-flex-start-container">
   <div class="box">1</div>
   <div class="box">2</div>
   <div class="box">3</div>
 </div>
         <h3>2 Property- justify-content: flex-end;</h3>
-        <p>justify-content: flex-end;  property ka use ye batne ke liye kiya jata hai ki content ko container ke andar horizontal(padi ya leti hui) direction agr flex-direction row laga or varna agar flex direction column laga hai to vertical(khadi disha) me  container ke end (bottom ) me align karna hai.</p>
+        <p>justify-content: flex-end;  property ka use karke content ya box ko flex direction ke according row ke according left se right wale rule se ye box ko last mtlb right mai align karta hai or column rule ke according ye box ko left mai hi  sabse neeche bottom mai align karta hai</p>
 <div class="justify-content-flex-end-container">
   <div class="box">1</div>
   <div class="box">2</div>
   <div class="box">3</div>
 </div>
 <h3>3 Property- justify-content: center;</h3>
-<p>justify-content: center;  property ka use ye batne ke liye kiya jata hai ki content ko container ke andar horizontal(padi ya leti hui) direction agr flex-direction row laga or varna agar flex direction column laga hai to vertical(khadi disha) me  container ke center me align karna hai.</p>
+<p>justify-content: center;  property ka use karke isko row ke ansura leti line mai mtlb left se right mai start se isko center mai kar sakte hai or column laga ho to isko top se bottom rule se isko center per rahega ye left mai hi  isko align kar sakte hai.</p>
 <div class="justify-content-center-container">
   <div class="box">1</div>
   <div class="box">2</div>
@@ -83,7 +85,7 @@
 </div>
 
 <h3>4 Property- justify-content: space-between;</h3>
-<p>justify-content: space-between;  property ka use ye batne ke liye kiya jata hai ki content ko container ke andar horizontal(padi ya leti hui) direction agr flex-direction row laga or varna agar flex direction column laga hai to vertical(khadi disha) me  container ke start (left side) me or last mai right side mai kareke becch mai barabar sabeke pass jagh rakhni hai align karna hai.</p>
+<p>justify-content: space-between;  property ka use karke isko row ke anusaar left se right mai start mai hi lekin sabhi box mai se keval 1 or last wale box ko dono kone mai left wale ko left wale or right wale ko rilght kone mai align karke baki sabhi ke beech barabar space de sakte hai. column se top se bottom mai hi 1 wale box ko sabse top mai or last wale ko sabse last mai rakh kar baki sabhi box lo beech mai barabar space de sakte hai. </p>
 <div class="justify-content-space-between-container">
   <div class="box">1</div>
   <div class="box">2</div>
@@ -91,17 +93,236 @@
   </div>
   
 <h3>5 Property- justify-content: space-around;</h3>
-<p>justify-content: space-around;  property ka use ye batne ke liye ki content ko container ke andar horizontal(padi ya leti hui) direction agr flex-direction row laga or varna agar flex direction column laga hai to vertical(khadi disha) me  jitne box ya element hai sab tarf se barabar jagh rakh kar  hi align karna hai.</p>
+<p>justify-content: space-around;  property ka use ye batne ke liye ki box ko row ke according left se right mai start mai hi lekin sabhi box mai sab taraf se barabar space de sakte hai. column ke according top se bottom mai lekin left side mai hi box ko align karke sabhi box ke beech baraber space de sakte hai.</p>
 <div class="justify-content-space-around-container">
   <div class="box">1</div>
   <div class="box">2</div>
   <div class="box">3</div>  
   </div>
 </div>
-
+ <div class="align-items-container">
 <h2>Align Items</h2>
-<p></p>
+<p><strong>align items ko  lagana ho to usko parent o height deni hoti hai tb ho uper nechhe beech mai hoga lekin ye hamesa left side mai ho hoga agr row  ya bcheeh mai karna hota hai to sath mai justify ka use karke ise idhe udar kar sakte hai.</strong> lekin jb flex direction row hai tb.<strong>Lekin jb column hoga flex direction tb vo left right kaam karega upernechhe nahi.</strong></p>
+  
 <h3>1 Property- align-items: flex-start;</h3>
+<p>align-items: flex-start; property cross axis kaam karta hai mtlb ulta agar flex direction row hai to vertical direction me align karna hai or agar flex direction column hai to horizontal direction me align karna hai ye property content ko container ke start (top side) me align karta hai.</p>
+<div class="align-items-flex-start-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  </div>
+
+
+
+<h3>2 Property- align-items: flex-end;</h3>
+<p>align-items: flex-end; property cross axis kaam karta hai mtlb ulta agar flex direction row hai to vertical direction me align karna hai or agar flex direction column hai to horizontal direction me align karna hai ye property content ko container ke end (bottom side) me align karta hai.</p>
+<div class="align-items-flex-end-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  </div>
+
+  <h3>3 Property- align-items: center;</h3>
+<p>align-items: center; property cross axis kaam karta hai mtlb ulta agar flex direction row hai to vertical direction me align karna hai or agar flex direction column hai to horizontal direction me align karna hai ye property content ko container ke center me align karta hai.</p>
+<div class="align-items-center-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  </div>
+
+  <h3>4 Property- align-items: stretch;</h3>
+<p>align-items: stretch; property cross axis kaam karta hai mtlb ulta agar flex direction row hai to vertical direction me align karna hai or agar flex direction column hai to horizontal direction me align karna hai ye property content ko container ke stretch me align karta hai.</p>
+<div class="align-items-stretch-container">
+  <div class="stretch-box">1</div>
+  <div class="stretch-box">2</div>
+  <div class="stretch-box">3</div>  
+  </div>
+</div>
+
+<div class="flex-wrap-container">
+<h2>Flex-wrap</h2>
+<p>Flex-wrap property ka use karte hai ye batane ke liye ki content wrap hoga ya nahi wrap hoga to content next line mai chala jayega or wrap nahi hoga to content ek line shikud kar hi rahega.</p>
+
+<h3>1 Property- flex-wrap: nowrap;</h3>
+<p>flex-wrap: nowrap; property ka use karte hai ye batane ke liye ki content wrap nahi hoga to content ek line shikud kar hi rahega ya phir line ke bahar nikal jayega. ye default hoti hai.</p>
+<div class="flex-wrap-nowrap-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  <div class="box">4</div>  
+  <div class="box">5</div>  
+  <div class="box">6</div> 
+<div class="box">7</div>
+  <div class="box">8</div>  
+  <div class="box">9</div>  
+  <div class="box">10</div>  
+  <div class="box">11</div>
+  <div class="box">12</div>
+  <div class="box">13</div>
+  <div class="box">14</div>
+<div class="box">15</div>
+<div class="box">16</div>
+<div class="box">17</div>
+<div class="box">18</div>
+<div class="box">19</div>
+<div class="box">20</div>
+</div>
+
+<h3>2 Property- flex-wrap: wrap;</h3>
+<p>flex-wrap: wrap; property ka use karte hai ye batane ke liye ki content wrap hoga to content next line mai chala jayega.</p>
+<p><strong>ek baat or jab flex ki direction column ho to hieght jarur den hota varna content ya box kabhi bhi tut kar nayi line right mai nahi jayege or va neehche jate rahege ya gayab ho jayega. or row mai width honi chahiye.</strong></p>
+
+<div class="flex-wrap-wrap-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  <div class="box">4</div>  
+  <div class="box">5</div>  
+  <div class="box">6</div>
+<div class="box">7</div>
+  <div class="box">8</div>
+  <div class="box">9</div>
+  <div class="box">10</div>
+  <div class="box">11</div>
+  <div class="box">12</div>
+
+
+</div>
+<h3>3 Property- flex-wrap: wrap-reverse;</h3>
+<p>flex-wrap: wrap-reverse; property mai row hai direction to box left se right mai tutate hai or tut kar next necche wali line mai nahi jate balki isi ke uper wali line mai chale jate jaise 1, 2, 3 pahele box hote hai lekin iske karn pahele box 4, 5,6 wale honge phir 1, 2, 3 wale box honge or column mai diection hogai to line tuute kar right mai age jati lekin reverse ke karn ye right ma nahi left mai ya pahele ayenge. 
+</p>
+<div class="flex-wrap-wrap-reverse-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  <div class="box">4</div>  
+  <div class="box">5</div>  
+  <div class="box">6</div>
+<div class="box">7</div>
+  <div class="box">8</div>
+  <div class="box">9</div>
+  <div class="box">10</div>
+  <div class="box">11</div>
+</div>
+</div>
+<div class="flex-flow-container">
+<h2>Flex-flow</h2>
+<p>Flex-flow property ka use karte hai ye batane ke liye ki flex-direction or flex-wrap dono ko ek sath likh sakte hai. jaise flex-flow: row wrap;  ya flex-flow: column nowrap;  is tarah se dono property ko ek sath likh sakte hai.</p>
+<h3>1 Property- flex-flow: row wrap;</h3>
+<p>flex-flow: row wrap; property ka use karte hai ye batane ke liye ki content row mai chahiye or content wrap hoga to content next line mai chala jayega.</p>
+<div class="flex-flow-row-wrap-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  <div class="box">4</div>  
+  <div class="box">5</div>  
+  <div class="box">6</div>
+<div class="box">7</div>
+  <div class="box">8</div>
+  <div class="box">9</div>
+  <div class="box">10</div>
+  <div class="box">11</div>
+  <div class="box">12</div>
+</div>
+<h3>2 property is tarah sare direction or warpko ek sath short mai likh sakte hai.</h3></div>
+</div>
+<div class="align-content-container">
+<h2>Align Content</h2>
+<p>Align content property ka use karte hai ye batane ke liye ki agar content ya box ke line tut kar next line mai jate hai to un line ko container ke andar kaise align karna hai. ye property tab kaam karta hai jab content ya box ke line tut kar next line mai jate hai or container ke andar space bacha hota hai to align content property se hum us space ko fill kar sakte hai. ye bilkul align items ki tarh hi hota hai lekin jb row ya column mai ek se jada line jati hai to align-items kaam nahi karta hai isliye iski jagah align content ka use karte hai is mai bhi ye property use hoti jaise <strong>flex-end flex-start center stretch or ime inke alava space between aur space around ka use bhi hoti hai kyuki usme sirf ek hi line hoti hai to sab tarf barabar space nahi pata hai lekin sime line jb bhut hoti hai isiliye ye kaam karta hai.</strong> Mtlb jb bhut line ho to align conet ka use karu varn align items ka.</p>
+
+<h3>align-content: flex-start;</h3>
+<p>align-content: flex-start; property cross axis kaam karta hai mtlb ulta agar flex direction row hai to vertical direction me align karna hai or agar flex direction column hai to horizontal direction me align karna hai ye property content ko container ke start me align karta hai.</p>
+<div class="align-content-flex-start-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  <div class="box">4</div>  
+  <div class="box">5</div>  
+  <div class="box">6</div>
+<div class="box">7</div>
+  <div class="box">8</div>  
+  <div class="box">9</div>  
+  <div class="box">10</div>  
+  <div class="box">11</div>
+  <div class="box">12</div>
+  <div class="box">13</div>
+  <div class="box">14</div>
+<div class="box">15</div>
+<div class="box">16</div>
+</div>
+
+  <h3>align-content: flex-end;</h3>
+<p>align-content: flex-end; property cross axis kaam karta hai mtlb ulta agar flex direction row hai to vertical direction me align karna hai or agar flex direction column hai to horizontal direction me align karna hai ye property content ko container ke end me align karta hai.</p>
+<div class="align-content-flex-end-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  <div class="box">4</div>  
+  <div class="box">5</div>  
+  <div class="box">6</div>
+<div class="box">7</div>
+  <div class="box">8</div>  
+  <div class="box">9</div>  
+  <div class="box">10</div>  
+  <div class="box">11</div>
+  <div class="box">12</div>
+  <div class="box">13</div>
+  <div class="box">14</div>
+<div class="box">15</div>
+<div class="box">16</div>
+</div>
+
+  <h3>align-content: space-between;</h3>
+<p>align-content: space-between; property cross axis kaam karta hai mtlb ulta agar flex direction row hai to vertical direction me align karna hai or agar flex direction column hai to horizontal direction me align karna hai ye property content ke line ko container ko suru se lekar akhir tak kheechta hai.</p>
+<div class="align-content-space-between-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  <div class="box">4</div>  
+  <div class="box">5</div>  
+  <div class="box">6</div>
+<div class="box">7</div>
+  <div class="box">8</div>
+  <div class="box">9</div>
+  <div class="box">10</div>
+  <div class="box">11</div>
+  <div class="box">12</div>
+  <div class="box">13</div>
+  <div class="box">14</div>
+</div>
+
+  <h3>align-content: space-around;</h3>
+  <p>align-content: space-around; property cross axis kaam karta hai mtlb ulta agar flex direction row hai to vertical direction me align karna hai or agar flex direction column hai to horizontal direction me align karna hai ye property content ke line ko container ke suru se lekr ant tak me align karta hai or sab tarf barabar space dega.</p>
+<div class="align-content-space-around-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  <div class="box">4</div>  
+  <div class="box">5</div>  
+  <div class="box">6</div>
+<div class="box">7</div>
+  <div class="box">8</div>
+  <div class="box">9</div>
+  <div class="box">10</div>
+  <div class="box">11</div>
+  <div class="box">12</div>
+  <div class="box">13</div>
+  <div class="box">14</div>
+</div>
+
+<div class="align-self-container">
+<h2>Align Self</h2>
+<p>Align self property ka use karte hai ye batane ke liye ki kisi specific content ya box ko container ke andar alag se align karna hai. ye property kisi specific content ya box ko container ke start, end, center, stretch me align kar sakta hai. ye property align-items ki tarh hi hota hai lekin align-items se hum sare content ya box ko ek sath align karte hai lekin align-self se hum kisi specific content ya box ko alag se align kar sakte hai.</p>
+<h3>align-self: flex-start;</h3>
+<p>align-self: flex-start; property ka use karte hai ye batane ke liye ki kisi specific content ya box ko container ke start me align karna hai.</p>
+<div class="align-self-flex-start-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>  
+  </div>
+
+  <h3>align-self: flex-end;</h3>
+</div>
 </main>
       </body>
 </html>

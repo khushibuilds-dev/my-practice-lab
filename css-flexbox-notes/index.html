@@ -309,19 +309,55 @@
   <div class="box">13</div>
   <div class="box">14</div>
 </div>
-
+</div>
 <div class="align-self-container">
 <h2>Align Self</h2>
 <p>Align self property ka use karte hai ye batane ke liye ki kisi specific content ya box ko container ke andar alag se align karna hai. ye property kisi specific content ya box ko container ke start, end, center, stretch me align kar sakta hai. ye property align-items ki tarh hi hota hai lekin align-items se hum sare content ya box ko ek sath align karte hai lekin align-self se hum kisi specific content ya box ko alag se align kar sakte hai.</p>
-<h3>align-self: flex-start;</h3>
-<p>align-self: flex-start; property ka use karte hai ye batane ke liye ki kisi specific content ya box ko container ke start me align karna hai.</p>
-<div class="align-self-flex-start-container">
+
+<p>Ye hamesha sdheedi hi line mai hota hai flex direction e according kadhi ya leti disha mai.</p><p><strong>Iski property vo sari hoti hai jo align-items ki hoti hai jaise flex-end flex-start center stretch ye sirf unbox ko jisko aap alg dikhna chate ho iske liye aap sab box per ek jaise class dekar usko style kar lenge or jis box ko alg dikhna hai ek or special class de denge phir us class ko alag se align-self property ka use karke end center aur start mai kar sakte hai.</strong></p>
+<h3>Example: Multi-class and Specific Alignment </h3>
+<div class="align-self-start-container">
   <div class="box">1</div>
   <div class="box">2</div>
   <div class="box">3</div>  
-  </div>
+  <div class="box align-self-end">4</div>  
+  <div class="box">5</div>  
+  <div class="box">6</div>
+</div>
 
-  <h3>align-self: flex-end;</h3>
+
+<div class="advance-flex-topic">
+<h2>Advance Flex Topic</h2>
+<p>Ek sath teeno advance properties (order, flex-grow, flex-shrink) ka use hamesha alag/specific class wale boxes par hota hai.</p>
+<p>Ek hi container ke alag-alag boxes par hum alag-alag kaam kar sakte hain—jaise kisi ka number badalna (order), kisi ko bada karna (flex-grow), ya kisi ko chota karna (flex-shrink).</p>
+<h3>Example: Advance Flex Properties</h3>
+<div class="advance-flex-container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box flex-grow">3 flex grow eg.</div>   
+  <div class="box order-1">5 eg order</div>  </div>
+  <div class="shrink-box-container">
+<div class="box">1</div>
+<div class="box">2</div>
+<div class="box flex-shrink"></div>
+<div class="box">4</div>
+<div class="box">5</div>
+<div class="box">6</div>
+<div class="box">7</div>
+  <div class="box">8</div>
+  <div class="box">9</div>
+  <div class="box">10</div>
+  <div class="box">11</div>
+  <div class="box">12</div>
+  <div class="box">13</div>
+  <div class="box">14</div>
+
+  </div>
+  
+
+</div>
+
+
 </div>
 </main>
       </body>

@@ -1,1 +1,125 @@
+/* --- Base Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
+/* --- Main Layout Wrapper --- */
+.lab-wrapper {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* --- Header Styling --- */
+.lab-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lab-header h1 {
+    color: #1a202c;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.lab-subtitle {
+    color: #4a5568;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* --- Your Story Section (Hinglish Quote Box) --- */
+.my-story-section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-left: 6px solid #007bff; /* Beautiful Blue Line */
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.my-story-section h2 {
+    margin-top: 0;
+    color: #1a202c;
+}
+
+.my-story-section p {
+    line-height: 1.7;
+    color: #4a5568;
+    font-size: 1.05rem;
+}
+
+/* --- Projects Section Heading --- */
+.projects-section h2 {
+    color: #1a202c;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- Projects Flexbox Grid --- */
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between cards */
+}
+
+/* --- Individual Project Card --- */
+.project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+/* Card Hover Effect (Yeh HR ko bohot accha lagega) */
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+    border-color: #007bff;
+}
+
+.project-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #007bff;
+    font-size: 1.25rem;
+}
+
+.project-desc {
+    color: #718096;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* --- Project Link Button --- */
+.project-link {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #007bff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.project-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* --- Footer Section --- */
+.lab-footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #a0aec0;
+    font-size: 0.9rem;
+}

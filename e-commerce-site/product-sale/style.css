@@ -1,3 +1,8 @@
+body{
+    background-color: grey;
+    color: black;
+    
+}
 div{
     width: 300px;
     border: 2px solid grey;

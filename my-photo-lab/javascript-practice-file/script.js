@@ -18,4 +18,10 @@ console.log(x);
 let y = 10;
 y --;
 console.log(y);
+let z = 17;
+let w = 2;
+let quo = Math.floor(z/w);
+console.log(quo);
+
+
 

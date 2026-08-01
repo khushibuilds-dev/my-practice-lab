@@ -24,6 +24,7 @@ let quo = Math.floor(z/w);
 console.log(quo);
 let rem = z%w;
 console.log(rem);
-
+console.log(z*w);
+console.log(z+w);
 
 

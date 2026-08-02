@@ -40,3 +40,24 @@ else{
 }
 
 //output You are eligible to vote
+let user = true;
+if(user){
+    console.log("You are logged in");
+} 
+else{
+    console.log("You are not logged in");
+}
+//output You are logged in
+
+let userAge = 20;
+if(userAge> 18){
+    console.log("You can apply for licence");
+}
+else if(userAge == 18){
+    console.log("You can apply for  learner licence but you have to wait for 1 year");
+}
+else{
+    console.log("You are not eligible to apply for licence");
+}
+//output You can apply for licence
+

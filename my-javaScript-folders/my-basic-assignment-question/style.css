@@ -10,7 +10,7 @@ h1 {
 }
 h2 {
     color: #333;
-    font-style: bold;
+    font-weight: bold;
     margin-top: 20px;
 }
 h3 {
@@ -20,4 +20,11 @@ h3 {
 p{
     color: #333;
     line-height: 1.5;
+}
+div.question {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }

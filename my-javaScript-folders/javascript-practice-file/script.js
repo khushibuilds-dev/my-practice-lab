@@ -26,6 +26,11 @@ let rem = z%w;
 console.log(rem);
 console.log(z*w);
 console.log(z+w);
+let radius = 4;
+let pi = 3;
+let r = radius;
+console.log(pi * r * r);
+console.log(2 * pi * r);
 
 
 

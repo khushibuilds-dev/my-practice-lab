@@ -3,3 +3,8 @@ let a = 10.45;
 a = 20.55;
 console.log(a);
 console.log("Solution for question 2");
+console.log("Hello, World.");
+console.log("Hello, JavaScript.");
+console.log("Solution for question 3");
+let b = 10;
+console.log("My num is " + b);

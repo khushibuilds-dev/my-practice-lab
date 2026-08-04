@@ -31,6 +31,10 @@ let pi = 3;
 let r = radius;
 console.log(pi * r * r);
 console.log(2 * pi * r);
-
-
-
+let user = true;
+if(user){
+    console.log("Please sign in to continue");
+}
+else{
+    console.log("Welcome to my photo lab!");
+}

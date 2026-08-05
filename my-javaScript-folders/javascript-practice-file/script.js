@@ -45,3 +45,11 @@ if(userAge >=18){
 }else{
     console.log("You are not eligible to vote");
 }
+let inLoggedIn ="true";
+if(inLoggedIn === "true"){
+    console.log("Welcome to my photo lab!");
+}else if(inLoggedIn === "false"){
+    console.log("Please sign in to continue");
+}else{
+    console.log("Please sign in to continue");
+}

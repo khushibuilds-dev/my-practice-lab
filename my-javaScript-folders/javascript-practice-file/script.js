@@ -38,3 +38,10 @@ if(user){
 else{
     console.log("Welcome to my photo lab!");
 }
+
+let userAge = 20;
+if(userAge >=18){
+    console.log("You are eligible to vote");
+}else{
+    console.log("You are not eligible to vote");
+}

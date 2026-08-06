@@ -20,3 +20,10 @@ console.log(num + "x 7 = " + num * 7);
 console.log(num + "x 8 = " + num * 8);
 console.log(num + "x 9 = " + num * 9);
 console.log(num + "x 10 = " + num * 10);
+
+console.log("Solution for question 5");
+let a = 1042;
+let b = 7;
+let quo = Math.floor(a / b);
+let rem = a % b;
+console.log(quo + " " + rem);

@@ -67,3 +67,8 @@ console.log(letter1.charCodeAt(0));
    let char1 = String.fromCharCode(67);
    console.log(char1);
 }
+
+{
+    let phrase = "God is great";
+    console.log(phrase.includes("great"));
+}

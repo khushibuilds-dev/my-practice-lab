@@ -51,4 +51,11 @@ if(inLoggedIn === "true"){
 }else if(inLoggedIn === "false"){
     console.log("Please sign in to continue");
 }else{
-    console.log("Please sign in to continue")
+    console.log("Please sign in to continue");
+}
+
+{
+    let letter = "A";
+    console.log(letter.charCodeAt(0));
+    
+}

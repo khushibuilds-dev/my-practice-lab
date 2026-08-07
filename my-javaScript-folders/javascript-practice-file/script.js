@@ -57,10 +57,13 @@ if(inLoggedIn === "true"){
 {
     let letter = "A";
     console.log(letter.charCodeAt(0));
-
+let letter1 = "B";
+console.log(letter1.charCodeAt(0));
 }
 
 {
     let char = String.fromCharCode(66);
     console.log(char);
+   let char1 = String.fromCharCode(67);
+   console.log(char1);
 }

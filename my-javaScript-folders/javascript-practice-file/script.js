@@ -96,11 +96,10 @@ console.log(phrase4.slice(0, name));
 
 let phrase5 = "Everyone is welcome to my photo lab! but you have to sign in first to continue than you can enjoy the photo lab!";
 console.log(phrase5.indexOf("my"));
-// output: 19
+// output: 23
 
 console.log(phrase5.indexOf("!"));
-// output: 65
+// output: 35
 
-console.log(phrase5.slice(19, 65));
-// output: "my photo lab! but you have to sign in first to continue than you can enjoy the photo lab!"
-//
+console.log(phrase5.slice(23, 35));
+// output: my photo lab

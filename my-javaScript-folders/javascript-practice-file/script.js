@@ -57,5 +57,10 @@ if(inLoggedIn === "true"){
 {
     let letter = "A";
     console.log(letter.charCodeAt(0));
-    
+
+}
+
+{
+    let char = String.fromCharCode(66);
+    console.log(char);
 }

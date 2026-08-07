@@ -71,4 +71,19 @@ console.log(letter1.charCodeAt(0));
 {
     let phrase = "God is great";
     console.log(phrase.includes("great"));
+
+    let phrase1 = "Khushi Singh - Full Stack Web Developer";
+    console.log(phrase1.includes("Mern Stack Web Developer"));
+// output: false
 }
+
+{
+    let phrase2 = "Khushi Singh - Full Stack Web Developer";
+    console.log(phrase2.slice(0, 6));
+    // output: Khushi
+
+    let phrase3 = "Khushi Singh - Full Stack Web Developer";
+    console.log(phrase3.slice(7, 12));
+    // output: Singh
+}
+

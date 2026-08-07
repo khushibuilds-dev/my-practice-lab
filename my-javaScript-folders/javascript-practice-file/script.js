@@ -2,7 +2,7 @@ console.log("Khushi", "Welcome to my photo lab!", );
 console.log("My Birthday:", 2007);
 console.log("user", "Khushi");
 console.log("My Age:", 16);
-console.log("khushi", + 200);
+console.log("khushi", 200);
 let a = "Khushi Singh";
 console.log("My name is;" + " " + a);
 let myAge;
@@ -87,3 +87,20 @@ console.log(letter1.charCodeAt(0));
     // output: Singh
 }
 
+let phrase4 = "Khushi Singh - Full Stack Web Developer";
+let name = phrase4.indexOf("Singh");
+console.log(name);
+// output: 7
+console.log(phrase4.slice(0, name));
+// output: Khushi
+
+let phrase5 = "Everyone is welcome to my photo lab! but you have to sign in first to continue than you can enjoy the photo lab!";
+console.log(phrase5.indexOf("my"));
+// output: 19
+
+console.log(phrase5.indexOf("!"));
+// output: 65
+
+console.log(phrase5.slice(19, 65));
+// output: "my photo lab! but you have to sign in first to continue than you can enjoy the photo lab!"
+//

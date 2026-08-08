@@ -103,3 +103,26 @@ console.log(phrase5.indexOf("!"));
 
 console.log(phrase5.slice(23, 35));
 // output: my photo lab
+
+//1. Create two variables, myAge and humanDogRatio
+//2 Multiply the two together and store the result in myDogAge
+//3 Log myDogAge to the console
+{
+    let myAge = 35;
+let humanDogRatio = 7;
+let myDogAge = myAge * humanDogRatio;
+console.log(myDogAge);
+//output 
+}
+
+{
+    //create a variable, bonusPoint. Initialize it as 50. Increase to 100.
+    //Decrease it down to 25, and then fianally increase it ti 70
+    let bonusPoints = 50;
+    console.log(bonusPoints);
+    // output will be 50
+    bonusPoints = bonusPoints + 50;
+    console.log(bonusPoints);
+    //output will be 100
+    
+}

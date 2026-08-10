@@ -142,4 +142,17 @@ console.log(myDogAge);
 
     }
 }
-console.log(10);
+
+{
+   const rating1 = 12;
+   const rating2 = 12.89;
+   const rating3 = 12.12;
+   function calculateAverageRating(){
+    const sum = rating1+rating2+rating3;
+    return Math.floor(sum/3);
+
+   }
+   console.log(calculateAverageRating());
+
+}
+

@@ -162,4 +162,6 @@ const freeCodeCamp = "";
 console.log(Boolean(freeCodeCamp));
 
 const hasDeveloperJob = "true";
-console.log(Boolean("hasDeveloperJob"));
+if (hasDeveloperJob) {
+    console.log("khushi has a job to learn new things everday.");
+}

@@ -156,3 +156,10 @@ console.log(myDogAge);
 
 }
 
+const truthyOrFalshy = "true";
+console.log (Boolean("truthyOrFalshy"));
+const freeCodeCamp = "";
+console.log(Boolean(freeCodeCamp));
+
+const hasDeveloperJob = "true";
+console.log(Boolean("hasDeveloperJob"));

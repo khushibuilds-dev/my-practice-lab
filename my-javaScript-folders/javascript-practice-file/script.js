@@ -167,4 +167,6 @@ if (hasDeveloperJob) {
 }
 
 const isKhushiAGamer = false;
-if ()
+if (isKhushiAGamer) {
+    console..log("Khushi is a web developer");
+}

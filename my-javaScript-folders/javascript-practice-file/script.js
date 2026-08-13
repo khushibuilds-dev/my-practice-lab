@@ -170,3 +170,16 @@ const isKhushiAGamer = false;
 if (isKhushiAGamer) {
     console..log("Khushi is a web developer");
 }
+
+//Task: The Movie Theatre System
+/* Imagine you are making a system for a movie theatre.
+To watch a Horror Movie,
+ a person must be 18 years old AND have a Ticket.
+ Your Variables:
+ javascriptlet hasTicket = 1; // 1 means Yes, 0 means No
+let isEighteen = 0; // 1 means Yes, 0 means No
+What you need to do:Write a simple JavaScript if-else code using a Bitwise Operator to check if the person can watch the movie or not.
+If they can watch,
+ print "Welcome".
+ If they cannot watch, print "Go Home". */
+ 

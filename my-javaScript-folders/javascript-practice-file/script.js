@@ -168,7 +168,7 @@ if (hasDeveloperJob) {
 
 const isKhushiAGamer = false;
 if (isKhushiAGamer) {
-    console..log("Khushi is a web developer");
+    console.log("Khushi is a web developer");
 }
 
 //Task: The Movie Theatre System
@@ -182,4 +182,11 @@ What you need to do:Write a simple JavaScript if-else code using a Bitwise Opera
 If they can watch,
  print "Welcome".
  If they cannot watch, print "Go Home". */
- 
+ let isEighteen = 0;
+ let hasTicket = 1;
+ if (isEighteen && hasTicket) {
+    console.log("Welcome");
+
+  }else{
+    console.log("Go home");
+  }

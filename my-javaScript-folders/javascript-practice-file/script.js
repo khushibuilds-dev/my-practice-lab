@@ -190,3 +190,9 @@ If they can watch,
   }else{
     console.log("Go home");
   }
+
+  let umer = 12;
+  if(umer<18) {
+console.log("You can watch movie");
+  }
+  

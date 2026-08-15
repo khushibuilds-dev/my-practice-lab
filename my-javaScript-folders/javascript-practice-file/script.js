@@ -184,7 +184,7 @@ If they can watch,
  If they cannot watch, print "Go Home". */
  let isEighteen = 0;
  let hasTicket = 1;
- if (isEighteen && hasTicket) {
+ if (isEighteen & hasTicket) {
     console.log("Welcome");
 
   }else{
@@ -196,3 +196,5 @@ If they can watch,
 console.log("You can watch movie");
   }
   
+  const botName = "MathBot";
+const greeting = `Hi there! My name is ${botName} and I am here to teach you about the Math object!`;

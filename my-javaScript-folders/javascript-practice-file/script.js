@@ -202,3 +202,5 @@ console.log(greeting);
 console.log("The Math.random() method returns a pseudo random number greater than or equal to 0 and less than 1.");
 
 console.log("The Math.random() method returns a pseudo random number greater than or equal to 0 and less than 1.");
+const randomNum = Math.random();
+console.log(randomNum);

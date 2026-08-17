@@ -211,3 +211,4 @@ console.log(Math.max(23,1,2,34,4));
 console.log(Math.ceil(2.34));
 console.log(Math.ceil(3.6));
 console.log(Math.ceil(45.4));
+

@@ -24,4 +24,30 @@ console.log(myFriendsList[1]);
 console.log(myFriendsList.indexOf());
 
 
+const myFavPlaces = {
+    north: "Delhi",
+    south: "Kerela"
+};
+console.log(myFavPlaces);
+const user = {
+    name: "Khushi Singh",
+    age: 19,
+    profession: "Student"
 
+}
+console.log(user);
+console.log(user.name);
+const details = {
+    name: "Khushi",
+    age: 19,
+    birth: "4th may 2007"
+};
+const{name, age, bir} = details;
+console.log(bir);
+ const laptop = {
+    brand: "HP",
+    ram: "16GB",
+    processor: "i7",
+    Os: "Windows"
+ };
+ console.log(laptop.ram);

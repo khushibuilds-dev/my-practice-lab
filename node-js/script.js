@@ -86,5 +86,10 @@ Physics: "Mridiual Sir"
 
  teacher.chemistry= "Jatin Sir";
  console.log(teacher);
- 
+
+ console.log("chemistry" in teacher);
+
+ // find english teacher
+
+ console.log(teacher.chemistry);
 }

@@ -51,3 +51,9 @@ console.log(bir);
     Os: "Windows"
  };
  console.log(laptop.ram);
+ const{brand, ram, processor} = laptop;
+ console.log(laptop);
+ console.log(ram);
+ console.log(brand);
+ console.log(laptop['price']);
+ console.log("ram" in laptop);

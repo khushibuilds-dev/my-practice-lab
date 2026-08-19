@@ -56,4 +56,6 @@ console.log(bir);
  console.log(ram);
  console.log(brand);
  console.log(laptop['price']);
+ console.log(ram in laptop, "YE false dega kyuki ye proper nahi dhek raha hai variable dekh rha hai");
  console.log("ram" in laptop);
+ console.log(laptop.hasOwnProperty("ram"));

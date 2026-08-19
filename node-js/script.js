@@ -16,3 +16,12 @@ let pack1 = ["x", "y"];
 let pack2 = ["z"];
 let bigPack = [...pack1, ...pack2];
 console.log(bigPack);
+
+let favFruits = ["Mango", "Grapes", "bananaa", "pear", "Papaya"];
+console.log(favFruits);
+const myFriendsList = ["Kriti", "Anshika", "Ansh", "Rinki", "Ankita", "Palak", "Sanjana", "etc."];
+console.log(myFriendsList[1]);
+console.log(myFriendsList.indexOf());
+
+
+

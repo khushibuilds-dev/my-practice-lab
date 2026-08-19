@@ -61,9 +61,30 @@ console.log(bir);
  console.log(laptop.hasOwnProperty("ram"));
 
 
- {
-const fruits = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+{ 
+const ginti = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const[a, b, ...rest] = fruits;
 console.log(rest);
- }
+console.log(a);
+const teacher = {
+hindi: "Ankush Sir",
+English: "Priyanshu Sir",
+Math: "Suraj Sir",
+Science: "Jatin sir",
+Physics: "Mridiual Sir"
+}
+
+ const{hindi, english, ...other} = teacher;
+ console.log(other);
+
+ // Knowing something is there in code or not
+ // is Chemisrty teacher teacher in the list or not
+ console.log("Chemistry" in teacher); // it will return false
+
+ // chemistry teacher in list
+
+ teacher.chemistry= "Jatin Sir";
+ console.log(teacher);
+ 
+}

@@ -1,5 +1,5 @@
 console.log("Helo khushi future tech");
-console.log("Khushi songh");
+console.log("Khushi singh");
 let fruits = ["Apple", "banana", "pear", "grapes"];
 const [a, b, c] = fruits;
 console.log(a, b, c);
@@ -59,3 +59,11 @@ console.log(bir);
  console.log(ram in laptop, "YE false dega kyuki ye proper nahi dhek raha hai variable dekh rha hai");
  console.log("ram" in laptop);
  console.log(laptop.hasOwnProperty("ram"));
+
+
+ {
+const fruits = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const[a, b, ...rest] = fruits;
+console.log(rest);
+ }

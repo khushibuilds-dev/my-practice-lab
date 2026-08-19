@@ -93,3 +93,25 @@ Physics: "Mridiual Sir"
 
  console.log(teacher.chemistry);
 }
+
+
+
+/* Here i have to build a school manager project wher the school teacher name and subject list
+with the student name and thier grade. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -22,8 +22,27 @@ console.log(num + "x 9 = " + num * 9);
 console.log(num + "x 10 = " + num * 10);
 
 console.log("Solution for question 5");
-let a = 1042;
-let b = 7;
-let quo = Math.floor(a / b);
+let x = 1042;
+let y = 7;
+let quo = Math.floor(x / y);
 let rem = a % b;
 console.log(quo + " " + rem);
+
+{
+
+// Circle Area and Perimeter CalCulation 
+// perimeter of circle 2*pi*r
+let pi = 3;
+let radius = 4;
+console.log("Area of circle: " + pi*radius*radius);
+console.log("Preimeter of circle: " + 2*pi*radius );
+
+// Celcius to Forenhieght2
+
+
+
+
+
+
+
+}

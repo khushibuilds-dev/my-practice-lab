@@ -135,6 +135,13 @@ while(i<=7){
 
 //Task 9: Print numbers from 1 to 30, but for multiples of 5 (5, 10, 15...), print the word "Jump" instead of the number.
 
+for(i=1; i<=30; i++) {
+    if(i%5 === 0) {
+        console.log(i);
+    } else {
+        console.log("Jump");
+    }
+}
  
 
 

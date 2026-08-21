@@ -109,8 +109,33 @@ for(let i=1; i<=10; i++){
 
 // Task 7: Print all elements of this array using a loop: const fruits = ["apple", "banana", "cherry", "mango"];
 
+console.log("task 7");
+
+const fruits = ["apple", "banana", "cherry", "mango"];
+for(let i=0; i<=3; i++) {
+    
+    console.log(fruits);
+} 
+
+console.log("task 7 second way");
+
+const fal= ["apple", "banana", "cherry", "mango"];
+for(let i=0; i<=3; i++) {
+    console.log(fruits[i]);
+   
+}
+
+// Task 8: Print a message "Hello JavaScript" exactly 7 times using a while loop.
+
+let i = 1;
+while(i<=7){
+    console.log("Hello JavaScript");
+    i++;
+} 
 
 
+
+ 
 
 
 

@@ -183,8 +183,27 @@ console.log(sta);
 
 }
 
+console.log("antother practiced")
+let m = 5;
+for(let i=1; i<=m; i++) {
+    let x = " ";
+    for(let j=1; j<=i; j++) {
+        x = x + "* " 
 
+    }
+    console.log(x);
+}
 
+console.log("inverted tringle");
+
+let e = 5
+for(let i=5; i>=1; i--) {
+    let s = " "
+    for(let j=1; j<=i; j++) {
+s = s + "* "
+    }
+    console.log(s);
+}
 
 
 

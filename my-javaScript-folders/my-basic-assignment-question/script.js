@@ -135,14 +135,25 @@ while(i<=7){
 
 //Task 9: Print numbers from 1 to 30, but for multiples of 5 (5, 10, 15...), print the word "Jump" instead of the number.
 
-for(i=1; i<=30; i++) {
+for(let i=1; i<=30; i++) {
     if(i%5 === 0) {
-        console.log(i);
+        console.log("jump");
     } else {
-        console.log("Jump");
+        console.log(i);
     }
 }
  
+//Task 10: Count and print how many times the letter "a" appears in the string "javascript is amazing" using a loop.
+
+let digit = 0;
+let str = "javascript is amazing ";
+for(let i=0; i < str.length; i++){
+if(str[i] === "a"){
+    digit++;
+}
+
+}
+console.log(digit);
 
 
 

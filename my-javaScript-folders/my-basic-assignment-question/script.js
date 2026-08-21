@@ -154,8 +154,12 @@ if(str[i] === "a"){
 
 }
 console.log(digit);
-
-
+/*
+Task 11 (The Multiplier): Print the multiplication table of any number (e.g., 7) in this exact clean format: 7 x 1 = 7, 7 x 2 = 14 ... up to 7 x 10 = 70.
+Task 12 (The Array Searcher): You have an array: const numbers = [10, 45, 2, 89, 23, 6];. Use a loop to find and print only the biggest (maximum) number from this array (Answer should be 89).
+Task 13 (The Space Counter): Count and print how many blank spaces (" ") are there in the string "learning javascript is fun" using a loop (Answer should be 3).
+Task 14 (The Filter): You have an array: const mixData = [12, "apple", 45, "banana", 7, "cherry"];. Loop through it and print only the numbers, ignore the strings.
+Task 15 (The Factorial): Calculate the product of all numbers from 1 to 5 (i.e., 1 * 2 * 3 * 4 * 5). Print the final answer (Answer should be 120).*/
 
 
 

@@ -76,8 +76,30 @@ for(let i=1; i<=10; i++) {
 }
 
 {
+// Task 3: Print all even numbers between 1 and 20 (2, 4, 6...).
 
+for(let i=1; i<=20; i++ ) {
+    if(i%2 === 0) {
+        console.log(i);
+    }
 }
+}
+
+// task 4:Print all odd numbers between 1 and 20 (1, 3, 5...).
+
+for (let i = 1; i<=20; i+=2) {
+    console.log(i);
+}
+
+// task 5: Print the multiplication table of 5 (Output format: 5, 10, 15, ... 50).
+
+
+let num = 5;
+for(let i=1; i<=10; i++){
+  console.log(num*i);
+}
+
+
 
 
 

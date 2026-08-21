@@ -154,6 +154,8 @@ if(str[i] === "a"){
 
 }
 console.log(digit);
+}
+
 /*
 Task 11 (The Multiplier): Print the multiplication table of any number (e.g., 7) in this exact clean format: 7 x 1 = 7, 7 x 2 = 14 ... up to 7 x 10 = 70.
 Task 12 (The Array Searcher): You have an array: const numbers = [10, 45, 2, 89, 23, 6];. Use a loop to find and print only the biggest (maximum) number from this array (Answer should be 89).
@@ -162,9 +164,28 @@ Task 14 (The Filter): You have an array: const mixData = [12, "apple", 45, "bana
 Task 15 (The Factorial): Calculate the product of all numbers from 1 to 5 (i.e., 1 * 2 * 3 * 4 * 5). Print the final answer (Answer should be 120).*/
 
 
+console.log("nested loop practice");
+
+console.log("right anlge tringle");
 
 
 
+let n = 3;
 
+for(let i=1; i<=n; i++) {
+
+let sta = " ";
+
+for(let j=1; j<=i; j++){
+    sta = sta + "* ";
+}
+console.log(sta);
 
 }
+
+
+
+
+
+
+

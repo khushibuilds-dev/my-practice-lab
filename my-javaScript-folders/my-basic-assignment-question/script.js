@@ -37,7 +37,47 @@ let radius = 4;
 console.log("Area of circle: " + pi*radius*radius);
 console.log("Preimeter of circle: " + 2*pi*radius );
 
-// Celcius to Forenhieght2
+
+/*
+🟢 Beginner Level (Tasks 1 - 4)
+
+Task 1: Print numbers from 1 to 10 using a for loop.
+Task 2: Print numbers in reverse from 10 to 1 using a for loop.
+Task 3: Print all even numbers between 1 and 20 (2, 4, 6...).
+Task 4: Print all odd numbers between 1 and 20 (1, 3, 5...).
+
+🟡 Intermediate Level (Tasks 5 - 8)
+
+Task 5: Print the multiplication table of 5 (Output format: 5, 10, 15, ... 50).
+Task 6: Calculate and print the sum of numbers from 1 to 10 (Answer should be 55).
+Task 7: Print all elements of this array using a loop: const fruits = ["apple", "banana", "cherry", "mango"];
+Task 8: Print a message "Hello JavaScript" exactly 7 times using a while loop.
+
+🔴 Advanced Level (Tasks 9 - 10)
+
+Task 9: Print numbers from 1 to 30, but for multiples of 5 (5, 10, 15...), print the word "Jump" instead of the number.
+Task 10: Count and print how many times the letter "a" appears in the string "javascript is amazing" using a loop.
+*/
+
+{ //Task 1: Print numbers from 1 to 10 using a for loop.
+
+for(let i=1; i<=10; i++) {
+    console.log(i);
+}
+
+}
+
+{ // Task 2: Print numbers in reverse from 10 to 1 using a for loop.
+
+    for(let i=10; i>=1; i--) {
+        console.log(i);
+    }
+
+}
+
+{
+
+}
 
 
 

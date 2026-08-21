@@ -92,12 +92,25 @@ for (let i = 1; i<=20; i+=2) {
 }
 
 // task 5: Print the multiplication table of 5 (Output format: 5, 10, 15, ... 50).
-
+console.log("task 5");
 
 let num = 5;
 for(let i=1; i<=10; i++){
   console.log(num*i);
 }
+ //Calculate and print the sum of numbers from 1 to 10 
+
+ console.log("task: 6");
+ let sum = 0;
+ for(let i=1; i<=10; i++) {
+    sum = sum + i;
+ } 
+ console.log(sum);
+
+// Task 7: Print all elements of this array using a loop: const fruits = ["apple", "banana", "cherry", "mango"];
+
+
+
 
 
 

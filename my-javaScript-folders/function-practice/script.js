@@ -27,4 +27,15 @@ let a = checkSecondLastDigit(120);
  }
 
  // binary to string 
- 
+
+ function binartyToDecimal(binaryString){
+    return parseInt(binaryString, 2);
+ }
+
+ // Superman name modifier 
+
+ function modifyName(heroName) {
+    return `Super ${heroName}`;
+ }
+
+ //

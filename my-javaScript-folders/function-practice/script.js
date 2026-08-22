@@ -38,4 +38,31 @@ let a = checkSecondLastDigit(120);
     return `Super ${heroName}`;
  }
 
- //
+ // sum of even no. function
+  function sumOfEven(n) {
+   let sum = 0;
+   for (let i = 1; i<=n; i++) {
+      if (i%2 === 0) {
+         sum = sum + i;
+      }
+   }
+   return sum;
+  }
+ let n = 10;
+  let add = sumOfEven(n);
+  console.log(add);
+  for (let i=1; i<=15; i++) {
+   if(i>=5 && i<=10) {
+      console.log(i.toString());
+   }
+   
+  }
+  let x = 3;
+
+  for (let i=1; i<=x; i++) {
+   let row = " ";
+   for(let j=1; j<=x; j++) {
+row +="#";
+   }
+   console.log(row);
+  }

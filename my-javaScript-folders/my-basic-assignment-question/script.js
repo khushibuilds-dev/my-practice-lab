@@ -205,7 +205,27 @@ s = s + "* "
     console.log(s);
 }
 
+let row = 3;
+for(let i = 1; i<=row; i++) {
+    let str = "";
+    for(let j = 1; j<=row; j++) {
+str += j;   
+ }
+ console.log(str);
+}
+{
+    let n = 3;
+    for(let i=1; i<=n; i++) {
+        let row = "";
+        for(let j=1; j<=i; j++) {
+           row = row + String.fromCharCode(64 + j);
+                }
+                console.log(row);
+    }
+}
 
-
-
+let d = 9;
+for(let i=1; i<=d; i++) {
+    
+}
 

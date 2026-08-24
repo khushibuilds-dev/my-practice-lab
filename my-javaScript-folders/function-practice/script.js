@@ -75,5 +75,8 @@ row +="#";
    }
    console.log(x);
   }
-
-  
+console.log(
+   (function (firstName) {
+      return `Hello ${firstName}`; // Value bahar bheji
+   })("Khushi") // Yahan function run hua aur value console.log ko mili
+);

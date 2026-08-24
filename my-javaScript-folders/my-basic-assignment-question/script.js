@@ -221,11 +221,13 @@ str += j;
            row = row + String.fromCharCode(64 + j);
                 }
                 console.log(row);
+
     }
 }
 
-let d = 9;
-for(let i=1; i<=d; i++) {
-    
-}
+/*  POCKET Money tracker
+You received ₹2000 as your pocket money. You spend some amount of money daily. 
+Write a program that continuously asks the user for their daily expense until all the money is finished. */
+
+
 

@@ -229,5 +229,14 @@ str += j;
 You received ₹2000 as your pocket money. You spend some amount of money daily. 
 Write a program that continuously asks the user for their daily expense until all the money is finished. */
 
+let pocketMoney = 2000;
+while(pocketMoney >= 0 ) {
+let expens = Number(prompt(`Alert: You have only ${pocketMoney} ? How much did you  spend money today`));
+pocketMoney = pocketMoney-expens;
+
+console.log("Remaining Balance: "  + pocketMoney);
+}
+console.log(`Alert: you have spent too much so your current balance is ${pocketMoney}`);
+
 
 

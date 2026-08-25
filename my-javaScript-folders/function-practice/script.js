@@ -112,3 +112,22 @@ function findIndexOfLargestNum(numbers) {
 }
  let index = findIndexOfLargestNum([4, 16,4, 12, 8, 9]);
  console.log(index);
+
+ // consecutive pair sum in array
+ /* [1, 2, 3, 4]
+ 1+2,2+3, 3+4 like this is called pair sum */
+
+ function pairSum(arr) {
+   let sum =[];
+   for(let i=0; i<arr.length - 1; i++) {
+  let currentSum = arr[i] + arr[i + 1];
+  sum.push(currentSum);
+   }
+   return sum
+ }
+ let consecituive = pairSum([2, 3, 4, 5, 6, 7, 12]);
+ console.log(consecituive);
+
+ function consecutiveSum (num) {
+   let 
+ } 

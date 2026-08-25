@@ -230,7 +230,7 @@ You received ₹2000 as your pocket money. You spend some amount of money daily.
 Write a program that continuously asks the user for their daily expense until all the money is finished. */
 
 let pocketMoney = 2000;
-while(pocketMoney >= 0 ) {
+while(pocketMoney > 0 ) {
 let expens = Number(prompt(`Alert: You have only ${pocketMoney} ? How much did you  spend money today`));
 pocketMoney = pocketMoney-expens;
 

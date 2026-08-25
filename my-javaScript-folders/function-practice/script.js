@@ -93,5 +93,22 @@ function findSmallest(numbers) {
    }
    return smallest;
 }
-const res = findSmallest([1,2, 3,6, 8,9]);
-console.log(res);
+    const res = findSmallest([1,2, 3,6, 8,9]);
+      console.log(res);
+
+
+      // find the index of largest num in array
+
+function findIndexOfLargestNum(numbers) {
+   let largest = 0;
+   for(let i=0; i< numbers.length; i++) {
+
+   if(numbers[i] > numbers[largest]) {
+      largest = i;
+   }
+   
+   }   
+   return largest;
+}
+ let index = findIndexOfLargestNum([4, 16,4, 12, 8, 9]);
+ console.log(index);

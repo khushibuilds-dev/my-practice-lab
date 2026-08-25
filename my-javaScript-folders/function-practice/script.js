@@ -80,3 +80,18 @@ console.log(
       return `Hello ${firstName}`; // Value bahar bheji
    })("Khushi") // Yahan function run hua aur value console.log ko mili
 );
+// Find smallest number in array creat function for it.
+
+
+
+function findSmallest(numbers) {
+   let smallest = numbers[0];
+   for (let i = 0; i<numbers.length; i++) {
+      if(numbers[i] <smallest) {
+         smallest = numbers[i];
+      }
+   }
+   return smallest;
+}
+const res = findSmallest([1,2, 3,6, 8,9]);
+console.log(res);

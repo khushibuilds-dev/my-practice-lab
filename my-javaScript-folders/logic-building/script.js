@@ -52,3 +52,30 @@ function sumOfArray(arr) {
 }
 const arry= sumOfArray([1, 2, 3, 4]);
 console.log(arry);
+
+/* Index of the dominant element
+You are given an integer array nums of size n where the largest integer is unique. Your 
+task is to determine whether the largest element in the array is at least twice as much as every other number in the array. 
+If it is, print the index of the largest element, or print -1 otherwise */
+
+function indexOfDominantElement(nums, n){
+  let max = nums[0];
+  let maxIndex = 0;
+  for(let i=0; i<nums.length; i++) {
+    if(nums[i]>max){
+      max = nums[i];
+      maxIndex = i;
+    }
+  }
+  for(let i = 0; i<nums.length; i++) {
+    if(i !== maxIndex  && max < nums[i]*2) {
+      return -1;
+    }
+  }
+return maxIndex ; 
+  
+} 
+const resul = indexOfDominantElement([2, 1, 45, 3, 1, 0 ], 6);
+console.log(resul);
+
+

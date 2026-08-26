@@ -78,4 +78,44 @@ return maxIndex ;
 const resul = indexOfDominantElement([2, 1, 45, 3, 1, 0 ], 6);
 console.log(resul);
 
+// last occurence in ushorted array
 
+function lastOccurenceNum(num, target) {
+  
+  for(let i= num.length-1; i>=0; i--) {                  //loop la pechhe se chalne ke liye
+    if(num[i] === target) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+const last = lastOccurenceNum([2, 4, 2, 1, 4, 2, 4], 2);
+console.log(last);
+
+// 4 occurence of the elment in unshorted array
+
+function firstOccurenceIndex(num, target) {
+  for(let i = 0; i<num.length; i++) {
+    if(num[i] === target){
+      return i;
+    }
+  }
+  return -1;
+}
+
+function numOccurenceIndex(num, target, OccurenceNo) {
+  let count = 0;
+  for(let i=0; i<num.length; i++) {
+    if(num[i] === target) {
+      count++
+    }
+    if(count === OccurenceNo) {
+      return i;
+    }
+  }
+}
+const numIndex = numOccurenceIndex([2,4,3,2, 3, 2, 5], 2, 3);
+console.log(numIndex);
+const firstIndex = firstOccurenceIndex([2, 3, 5, 3, 7, 8], 3);
+console.log(firstIndex);

@@ -76,6 +76,7 @@ return maxIndex ;
   
 } 
 const resul = indexOfDominantElement([2, 1, 45, 3, 1, 0 ], 6);
+
 console.log(resul);
 
 // last occurence in ushorted array
@@ -119,3 +120,10 @@ const numIndex = numOccurenceIndex([2,4,3,2, 3, 2, 5], 2, 3);
 console.log(numIndex);
 const firstIndex = firstOccurenceIndex([2, 3, 5, 3, 7, 8], 3);
 console.log(firstIndex);
+
+// index of element 
+/* You are given an integer array Arr of size N and a number X.
+ You need to print all the indexes of the given X in the array, else print -1.
+
+ Note : You have to give output in 1-based indexing.
+*/

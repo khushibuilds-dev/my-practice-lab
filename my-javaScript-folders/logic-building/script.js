@@ -127,3 +127,10 @@ console.log(firstIndex);
 
  Note : You have to give output in 1-based indexing.
 */
+
+
+// boolean checker function
+function booleanCheckerFunction(value) {
+  return typeof value === "boolean";
+}
+console.log(booleanCheckerFunction(1));

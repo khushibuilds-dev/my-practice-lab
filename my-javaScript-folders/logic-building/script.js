@@ -134,3 +134,8 @@ function booleanCheckerFunction(value) {
   return typeof value === "boolean";
 }
 console.log(booleanCheckerFunction(1));
+
+
+function boowho(num) {
+  return typeof num === "boolean"
+}

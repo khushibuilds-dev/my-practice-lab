@@ -289,4 +289,13 @@ return num;
 }
 const checker = PhoneNumberMasker("8922885843");
 console.log(checker);
-// Advenced masker
+// Advanced masker    12345156353746268887663
+function amazonATMmasker(number) {
+const totalLength = number.length
+const lastFourDigit = number.slice(totalLength-4);
+const startNum = "x".repeat(totalLength-4);
+return `${startNum}${lastFourDigit}`;  
+}
+const atmMasker = amazonATMmasker("12345156353746268887663");
+
+console.log(atmMasker);

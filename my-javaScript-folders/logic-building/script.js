@@ -250,5 +250,19 @@ Input:
 output:
   [ 'Alice', 'David' ] */
 function GetActivePremiumUsers(users){
-  
+  let activeUsers = [];
+  for(let i=0; i<users.length; i++){
+  if(users[i].isActive === true && users[i].tier === "Premium"){
+    activeUsers.push(users[i].name);
+    }
+  }
+  return activeUsers;
 }
+const user = GetActivePremiumUsers([
+  {"name": "Alice", "tier": "Premium", "isActive": true},
+  {"name": "Bob", "tier": "Free", "isActive": true},
+  {"name": "Charlie", "tier": "Premium", "isActive": false},
+  {"name": "David", "tier": "Premium", "isActive": true},
+  {"name": "Eva", "tier": "Free", "isActive": false}
+]);
+console.log(user);

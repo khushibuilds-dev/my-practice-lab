@@ -249,3 +249,6 @@ Input:
 ]
 output:
   [ 'Alice', 'David' ] */
+function GetActivePremiumUsers(users){
+  
+}

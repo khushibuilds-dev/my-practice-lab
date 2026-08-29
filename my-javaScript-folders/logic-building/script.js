@@ -266,3 +266,18 @@ const user = GetActivePremiumUsers([
   {"name": "Eva", "tier": "Free", "isActive": false}
 ]);
 console.log(user);
+
+// Reduce method
+
+//  Ek students ki array se saare marks ka Total Sum nikaalein.
+
+function totalMarks(student){
+  return student.reduce ((totalMarks, student) => totalMarks + student.marks, 0); 
+}
+const stuedent = totalMarks([
+  { name: "A", marks: 2 },
+  { name: "B", marks: 1 },
+  { name: "C", marks: 3 }
+]);
+console.log(stuedent)
+

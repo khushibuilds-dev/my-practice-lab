@@ -287,6 +287,6 @@ const lastFourDigit = number.slice(6);
 const num = `****** ${lastFourDigit}`;
 return num;
 }
-const checker = PhoneNumberMasker(8922885843);
+const checker = PhoneNumberMasker("8922885843");
 console.log(checker);
 // Advenced masker

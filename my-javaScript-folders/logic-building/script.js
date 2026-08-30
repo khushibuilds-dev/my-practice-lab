@@ -305,7 +305,7 @@ function printNumNewLine(value) {
   for(let i=0; i<value.length; i++){
      let row = "";
      for(let j=0; j<value[i].length; j++){
-      row += value[j];
+      row = value[j];
      }
   }
   return value;

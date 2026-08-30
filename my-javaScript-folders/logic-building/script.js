@@ -299,3 +299,13 @@ return `${startNum}${lastFourDigit}`;
 const atmMasker = amazonATMmasker("12345156353746268887663");
 
 console.log(atmMasker);
+
+function printNumNewLine(value) {
+ 
+  for(let i=0; i<value.length; i++){
+     let row = "";
+     for(let j=0; j<value[i].length; j++){
+      row += value[j];
+     }
+  }
+}

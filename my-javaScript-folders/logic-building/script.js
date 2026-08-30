@@ -308,4 +308,8 @@ function printNumNewLine(value) {
       row += value[j];
      }
   }
+  return value;
 }
+
+const test = printNumNewLine(["123445"]);
+console.log(test);

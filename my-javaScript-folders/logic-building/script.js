@@ -388,6 +388,34 @@ function SumArr(arr) {
 }
 const eachSum = SumArr([[2, 1, 3], [3, 3, 2]]);
 console.log(eachSum);
+/* Goal: Ek function likhna hai jo count karega ki ek specific target character matrix mai kitni baar aaya hai. */ 
+
+function CountSpecificEle(arr, target){
+  let count = 0;
+  for(let i=0; i<arr.length; i++) {
+    for(let j=0; j<arr[i].length; j++){
+      if(arr[i][j] === target){
+        count++
+      }
+    }
+ }
+return count; 
+}
+const specific = CountSpecificEle([[2, 1, 3], [3, 3, 2]], 2);
+console.log(specific);
+
+// Digonal Difference
+/* Given a square matrix (same number of rows and columns), 
+calculate the absolute difference between the sums of its two diagonals:
+Primary Diagonal: Top-left to bottom-right.
+Secondary Diagonal: Top-right to bottom-left.Example Matrix: */
+// Prrimary Diogonal Sum
+
+// Note Diogonal ka mtlb hota hai ki dono jg mtlb array [0][0] ya 1, 2 kuch bhi ho btu same ho to us jag jo bhi value hai vo digalanl ke ander ayegi
+
+function PrimaryDigonalSum (arr){
+
+}
 
 
 

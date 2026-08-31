@@ -324,3 +324,7 @@ function decendingOrder(arr){
 }
 const decendingSort = decendingOrder([5, -2, 10, 0, -8]);
 console.log(decendingSort);
+/*Question 2: Clean and Sort the Array! 🎭You are given a mixed array containing both numbers and strings. 
+First, filter out the strings so you only have numbers left. 
+Then, sort those numbers in ascending order (smallest to largest).
+Input: [20, "apple", -5, "banana", 0, 15]Expected Output: [-5, 0, 15, 20] */

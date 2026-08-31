@@ -313,3 +313,14 @@ function printNumNewLine(value) {
 
 const test = printNumNewLine(["123445"]);
 console.log(test);
+
+/* dESCENDING Order 
+You will get an array with both positive and negative numbers. you need to sort them
+in descending order and return the array.
+Input: [5, -2, 10, 0, -8]
+Expected Output: [10, 5, 0, -2, -8] */
+function decendingOrder(arr){
+  return arr.sort((a, b) => b-a);
+}
+const decendingSort = decendingOrder([5, -2, 10, 0, -8]);
+console.log(decendingSort);

@@ -414,8 +414,44 @@ Secondary Diagonal: Top-right to bottom-left.Example Matrix: */
 // Note Diogonal ka mtlb hota hai ki dono jg mtlb array [0][0] ya 1, 2 kuch bhi ho btu same ho to us jag jo bhi value hai vo digalanl ke ander ayegi
 
 function PrimaryDigonalSum (arr){
-
+  let sum = 0;
+  for(let i=0; i<arr.length; i++) {
+    sum += arr[i][i];
+  }
+return sum;  
 }
+const value = PrimaryDigonalSum([[2, 3, 1], [3, 4, 5]])
+console.log(value);
+
+// Secondary Dioganal sum
+
+//mtlb peeche se trichi line
+function SecondaryDiagonalSum(arr) {
+  let sum = 0;
+  for(let i=0; i<arr.length; i++){
+    sum += arr[i][arr.length-1-i];
+  }
+  return sum;
+}
+const diagonalSum = SecondaryDiagonalSum([
+  [2, 3,  5], 
+  [1, 3, 6],
+  [1, 2, 6]
+]);
+console.log(diagonalSum);
+// Diagonal difference means both primary and secondry ko alg alg add kakru phir dono ka ghta do 
+function DiagonalDifference(arr){
+  let primaryDiagonalSum = 0;
+  let secondaryDiagonalSum = 0;
+  for(let i = 0; i<arr.length; i++) {
+    primaryDiagonalSum += arr[i][i];
+    secondaryDiagonalSum += arr[i][arr.length -1 - i];
+  }
+  return primaryDiagonalSum - secondaryDiagonalSum;
+}
+const diagonal = DiagonalDifference([[1, 2, 4,], [1, 4, 6], [2, 4, 5]]);
+console.log(diagonal);
+
 
 
 

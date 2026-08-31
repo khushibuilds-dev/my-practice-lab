@@ -324,7 +324,35 @@ function decendingOrder(arr){
 }
 const decendingSort = decendingOrder([5, -2, 10, 0, -8]);
 console.log(decendingSort);
-/*Question 2: Clean and Sort the Array! 🎭You are given a mixed array containing both numbers and strings. 
+/*Question 2: Clean and Sort the Array! 
+🎭You are given a mixed array containing both numbers and strings. 
 First, filter out the strings so you only have numbers left. 
 Then, sort those numbers in ascending order (smallest to largest).
 Input: [20, "apple", -5, "banana", 0, 15]Expected Output: [-5, 0, 15, 20] */
+function sortAndClean(sortArr){
+  let arr = [];
+  for(let i=0; i<sortArr.length; i++){
+    if(typeof sortArr[i] === "number") {
+    arr.push(sortArr[i]);
+    }
+  }
+  return arr.sort((a, b) => a - b);
+}
+const res = sortAndClean([20, "apple", -5, "banana", 0, 15]);
+console.log(res);
+// Matrix Print all element 
+function matrix(arr) {
+  for(let i=0; i<arr.length; i++) {
+    for(let j=0; j<arr[i].length; j++) {
+      console.log(arr[i][j]);
+    }
+  }
+}
+matrix([[10, 20], [30, 40]]);
+
+// Sum of 2d element 
+
+
+
+
+

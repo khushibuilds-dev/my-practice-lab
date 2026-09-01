@@ -491,7 +491,18 @@ function diagonalSum(arr){
   let seceondarySum = 0;
   for(let i=0; i<arr.length; i++){
     primarySum += arr[i][i];
-    seceondarySum += arr[i[arr.length -1 -i]];
+    seceondarySum += arr[i][arr.length -1 -i];
 }
 return primarySum + seceondarySum;
 }
+// Email Masker task
+function emailMasker(email){
+  const  domain = email.split("@");
+  const username = domain[0];
+  const firstletter = username[0];
+  const lastletter = username[username.length -1];
+  const star = "*".repeat(username .length -2);
+  return `${firstletter}${star}${lastletter}@${domain[1]}`;
+}
+const email = emailMasker("khu4656@gmail.com");
+console.log(email);

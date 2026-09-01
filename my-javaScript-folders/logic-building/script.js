@@ -452,7 +452,46 @@ function DiagonalDifference(arr){
 const diagonal = DiagonalDifference([[1, 2, 4,], [1, 4, 6], [2, 4, 5]]);
 console.log(diagonal);
 
+// Print column wise
+function ColumnWisePrint(arr) {
+  for(let i=0; i<arr[0].length; i++){
+    for(let j=0; j<arr.length; j++){
+      return arr[j][i];
+    }
+  }
+}
+const prinaam = ColumnWisePrint([[1, 2, 3], [2, 4, 3]]);
+console.log(prinaam);
 
+// Primary diagonal sum 
+function primaryDiagonalSum(arr){
+  let sum = 0;
+  for(let i=0; i<arr.length; i++){
+    sum += arr[i][i];
+  }
+  return sum;
+}
+const primarySum = primaryDiagonalSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+console.log(primarySum);
 
+// secondary diagonal sum
+function secondaryDiagonalSum(arr){
+  let sum = 0; 
+  for(let i=0; i<arr.length; i++){
+     sum += arr[i][arr.length-1-i];
+  }
+  return sum;
+}
+const secondarySum = secondaryDiagonalSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+console.log(secondarySum);
 
-
+// Diagonal Sum;
+function diagonalSum(arr){
+  let primarySum = 0;
+  let seceondarySum = 0;
+  for(let i=0; i<arr.length; i++){
+    primarySum += arr[i][i];
+    seceondarySum += arr[i[arr.length -1 -i]];
+}
+return primarySum + seceondarySum;
+}

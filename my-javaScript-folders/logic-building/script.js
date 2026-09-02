@@ -510,13 +510,20 @@ console.log(email);
 function toeplizeMatrix(arr){
   for(let i=1; i<arr.length; i++){
     for(let j=1; j<arr[i].length; j++){
-      if(arr[i][j] === arr[i-1][j-1]){
-        return true;
-      } else {
+      if(arr[i][j] !== arr[i-1][j-1]){
         return false;
-      }
+      } 
     }
   }
+  return true;
 }
 const toeplize = toeplizeMatrix([[1, 2, 3], [4, 1, 2], [5, 4, 1]]);
 console.log(toeplize);
+
+// reverse array
+function reverseArray(arr){
+  return arr.reverse();
+}
+function maxAndMin(arr){
+return [Math.max(...arr), Math.min(...arr)];
+}

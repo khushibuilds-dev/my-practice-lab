@@ -486,7 +486,7 @@ const secondarySum = secondaryDiagonalSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
 console.log(secondarySum);
 
 // Diagonal Sum;
-function diagonalSum(arr){
+function diagonalSumsecondary(arr){
   let primarySum = 0;
   let seceondarySum = 0;
   for(let i=0; i<arr.length; i++){
@@ -506,3 +506,15 @@ function emailMasker(email){
 }
 const email = emailMasker("khu4656@gmail.com");
 console.log(email);
+// toeplize matrix
+function toeplizeMatrix(arr){
+  for(let i=0; i<arr.length; i++){
+    for(let j=0; j<arr[i].length; j++){
+      if(arr[i][j] === arr[i-1][j-1]){
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+}

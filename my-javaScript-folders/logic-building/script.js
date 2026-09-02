@@ -508,8 +508,8 @@ const email = emailMasker("khu4656@gmail.com");
 console.log(email);
 // toeplize matrix
 function toeplizeMatrix(arr){
-  for(let i=0; i<arr.length; i++){
-    for(let j=0; j<arr[i].length; j++){
+  for(let i=1; i<arr.length; i++){
+    for(let j=1; j<arr[i].length; j++){
       if(arr[i][j] === arr[i-1][j-1]){
         return true;
       } else {
@@ -518,3 +518,5 @@ function toeplizeMatrix(arr){
     }
   }
 }
+const toeplize = toeplizeMatrix([[1, 2, 3], [4, 1, 2], [5, 4, 1]]);
+console.log(toeplize);

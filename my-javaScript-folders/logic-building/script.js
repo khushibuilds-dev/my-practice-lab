@@ -1,5 +1,5 @@
 /* Reverse string
-Let I have a string like " khushi " and want to reverse it like this ihsuhk. */
+Let I have a string like " khushi " and want to reverse it like this ihsuhk. 
 let str = "Khushi";
 let revWord = ""
 for(let i = str.length-1; i>=0; i--) {
@@ -35,9 +35,9 @@ for(let i = 0; i<arr.length; i++) {
     }
 }
 console.log(max);
-/* Sum OF Array Except self Mtlb ke har bar sum krna hai sb elemnt ka lekin jaha se sur karna hai use chhode dene hai
+ Sum OF Array Except self Mtlb ke har bar sum krna hai sb elemnt ka lekin jaha se sur karna hai use chhode dene hai
 jaise [1, 3, 5, 8, 9, 23]; isme 0 index per ho to 1 ko chode kar baki ka sum phir 1 index per ho to
-3 ko chhod de aisa hi sb ka sum jo vo elemnt agyega use alg array mai de dna */
+3 ko chhod de aisa hi sb ka sum jo vo elemnt agyega use alg array mai de dna 
 function sumOfArray(arr) {
   let sum = 0;
   for(let i=0; i<arr.length; i++) {
@@ -53,10 +53,10 @@ function sumOfArray(arr) {
 const arry= sumOfArray([1, 2, 3, 4]);
 console.log(arry);
 
-/* Index of the dominant element
+Index of the dominant element
 You are given an integer array nums of size n where the largest integer is unique. Your 
 task is to determine whether the largest element in the array is at least twice as much as every other number in the array. 
-If it is, print the index of the largest element, or print -1 otherwise */
+If it is, print the index of the largest element, or print -1 otherwise 
 
 function indexOfDominantElement(nums, n){
   let max = nums[0];
@@ -122,11 +122,11 @@ const firstIndex = firstOccurenceIndex([2, 3, 5, 3, 7, 8], 3);
 console.log(firstIndex);
 
 // index of element 
-/* You are given an integer array Arr of size N and a number X.
+ You are given an integer array Arr of size N and a number X.
  You need to print all the indexes of the given X in the array, else print -1.
 
  Note : You have to give output in 1-based indexing.
-*/
+
 
 
 // boolean checker function
@@ -139,10 +139,10 @@ console.log(booleanCheckerFunction(1));
 function boowho(num) {
   return typeof num === "boolean"
 }
-/* Your First Target: "Maximum difference between two elements in an Array - JS"
+Your First Target: "Maximum difference between two elements in an Array - JS"
 Given an array of integers arr, find the maximum difference between any two elements in the array. In other words, 
 you need to find two numbers in the array such that their subtraction gives the largest possible value.
-Hint: Think about which two numbers in any array will always give the biggest difference when subtracted. (Largest number - Smallest number!) */
+Hint: Think about which two numbers in any array will always give the biggest difference when subtracted. (Largest number - Smallest number!) 
 
 function maximumDifference(num) {
   let max = num[0];
@@ -159,9 +159,9 @@ function maximumDifference(num) {
 const maxdifference = maximumDifference([2, 4, 1, 6, 9, 1]);
 console.log(maxdifference);
 
-/* Problem Statement:You are given two integer arrays, arr1 and arr2. 
+Problem Statement:You are given two integer arrays, arr1 and arr2. 
 You need to calculate the sum of all elements for both arrays.
-If the sum of arr1 is greater than or equal to the sum of arr2, return true.Otherwise, return false. */
+If the sum of arr1 is greater than or equal to the sum of arr2, return true.Otherwise, return false. 
 
 function comparingArraySum(arr1, arr2) {
   let arr1Sum = 0;
@@ -180,13 +180,15 @@ function comparingArraySum(arr1, arr2) {
 }
 const arrayComparingSum = comparingArraySum([2,3, 5, 6, 1], [2, 4, 1, 4]);
 console.log(arrayComparingSum);
-// Find Pair with Target Sum
-/* You are given an array of integers nums and an integer target. 
+
+Find Pair with Target Sum
+
+You are given an array of integers nums and an integer target. 
 You need to find if there exists any pair of elements whose sum (जोड़) is exactly equal to the target. 
 If such a pair exists, return true.If no such pair is found after checking the whole array, return false.
 Input: nums = [2, 7, 11, 15], target = 9
 Output: true
-Explanation: Because nums[0] + nums[1] is 2 + 7 = 9, which equals the target.*/
+Explanation: Because nums[0] + nums[1] is 2 + 7 = 9, which equals the target.
 
 function pairSum(num, target) {
   let pair = 0;
@@ -202,10 +204,10 @@ function pairSum(num, target) {
 const pairSumCom = pairSum([3, 4, 1, 7, 8], 5);
 console.log(pairSumCom);
 
-/* You are given a list of products from an online shopping store in the form of a JSON array. 
-Your task is to extract only the names of the products whose price is less than 1000 (Price < 1000). */
+You are given a list of products from an online shopping store in the form of a JSON array. 
+Your task is to extract only the names of the products whose price is less than 1000 (Price < 1000). 
 
-/*Complete the function GetCheapProducts() to return an array of these product names.
+Complete the function GetCheapProducts() to return an array of these product names.
 Input Datajson
 [
   {"name": "Wireless Mouse", "category": "Electronics", "price": 800},
@@ -215,7 +217,7 @@ Input Datajson
   {"name": "Bluetooth Speaker", "category": "Electronics", "price": 950}
 ]
 Expected Output
-javascript[ 'Wireless Mouse', 'Water Bottle', 'Bluetooth Speaker' ] */
+javascript[ 'Wireless Mouse', 'Water Bottle', 'Bluetooth Speaker' ] 
 
 function GetCheapProducts(data) {
   let cheapProduct = [];
@@ -234,7 +236,7 @@ const cheap = GetCheapProducts([
   {"name": "Bluetooth Speaker", "category": "Electronics", "price": 950}
 ]);
 console.log(cheap);
-/*  Practice Question: Active Premium Users
+Practice Question: Active Premium Users
 You are given a list of users for a streaming app.
 This time, you need to find only the names of the users 
 who have an active subscription (isActive: true) AND are Premium members (tier: "Premium").
@@ -248,7 +250,7 @@ Input:
   {"name": "Eva", "tier": "Free", "isActive": false}
 ]
 output:
-  [ 'Alice', 'David' ] */
+  [ 'Alice', 'David' ] 
 function GetActivePremiumUsers(users){
   let activeUsers = [];
   for(let i=0; i<users.length; i++){
@@ -277,11 +279,11 @@ function totalMarks(student){
 const stuedent = totalMarks([
   { name: "A", marks: 2 },
   { name: "B", marks: 1 },
-  { name: "C", marks: 3 }
+  { name: "C", marks: 3 } 
 ]);
 console.log(stuedent)
 
-//  Phone number masker  ******5843
+ Phone number masker  ******5843
 function PhoneNumberMasker(number) {
 const lastFourDigit = number.slice(6);
 const num = `****** ${lastFourDigit}`;
@@ -314,21 +316,22 @@ function printNumNewLine(value) {
 const test = printNumNewLine(["123445"]);
 console.log(test);
 
-/* dESCENDING Order 
+dESCENDING Order 
 You will get an array with both positive and negative numbers. you need to sort them
 in descending order and return the array.
 Input: [5, -2, 10, 0, -8]
-Expected Output: [10, 5, 0, -2, -8] */
+Expected Output: [10, 5, 0, -2, -8] 
+
 function decendingOrder(arr){
   return arr.sort((a, b) => b-a);
 }
 const decendingSort = decendingOrder([5, -2, 10, 0, -8]);
 console.log(decendingSort);
-/*Question 2: Clean and Sort the Array! 
+Question 2: Clean and Sort the Array! 
 🎭You are given a mixed array containing both numbers and strings. 
 First, filter out the strings so you only have numbers left. 
 Then, sort those numbers in ascending order (smallest to largest).
-Input: [20, "apple", -5, "banana", 0, 15]Expected Output: [-5, 0, 15, 20] */
+Input: [20, "apple", -5, "banana", 0, 15]Expected Output: [-5, 0, 15, 20] 
 function sortAndClean(sortArr){
   let arr = [];
   for(let i=0; i<sortArr.length; i++){
@@ -388,7 +391,7 @@ function SumArr(arr) {
 }
 const eachSum = SumArr([[2, 1, 3], [3, 3, 2]]);
 console.log(eachSum);
-/* Goal: Ek function likhna hai jo count karega ki ek specific target character matrix mai kitni baar aaya hai. */ 
+Goal: Ek function likhna hai jo count karega ki ek specific target character matrix mai kitni baar aaya hai.  
 
 function CountSpecificEle(arr, target){
   let count = 0;
@@ -405,10 +408,10 @@ const specific = CountSpecificEle([[2, 1, 3], [3, 3, 2]], 2);
 console.log(specific);
 
 // Digonal Difference
-/* Given a square matrix (same number of rows and columns), 
+Given a square matrix (same number of rows and columns), 
 calculate the absolute difference between the sums of its two diagonals:
 Primary Diagonal: Top-left to bottom-right.
-Secondary Diagonal: Top-right to bottom-left.Example Matrix: */
+Secondary Diagonal: Top-right to bottom-left.Example Matrix: 
 // Prrimary Diogonal Sum
 
 // Note Diogonal ka mtlb hota hai ki dono jg mtlb array [0][0] ya 1, 2 kuch bhi ho btu same ho to us jag jo bhi value hai vo digalanl ke ander ayegi
@@ -439,7 +442,7 @@ const diagonalSum = SecondaryDiagonalSum([
   [1, 2, 6]
 ]);
 console.log(diagonalSum);
-// Diagonal difference means both primary and secondry ko alg alg add kakru phir dono ka ghta do 
+Diagonal difference means both primary and secondry ko alg alg add kakru phir dono ka ghta do 
 function DiagonalDifference(arr){
   let primaryDiagonalSum = 0;
   let secondaryDiagonalSum = 0;
@@ -495,7 +498,7 @@ function diagonalSumsecondary(arr){
 }
 return primarySum + seceondarySum;
 }
-// Email Masker task
+Email Masker task
 function emailMasker(email){
   const  domain = email.split("@");
   const username = domain[0];
@@ -528,11 +531,11 @@ function maxAndMin(arr){
 return [Math.max(...arr), Math.min(...arr)];
 }
 // Task Clean the menu
-/*Problem Statement: You are given an array of food items that contains duplicate items and invalid values like null or undefined. 
+Problem Statement: You are given an array of food items that contains duplicate items and invalid values like null or undefined. 
 Write a JavaScript function to clean this array so that the output contains only unique and valid food items.
 Input: ["Samose", "Momos", null, "Burgers", "Momos", undefined, "Samose", "Pizza"]
 Expected 
-Output: ["Samose", "Momos", "Burgers", "Pizza"] */
+Output: ["Samose", "Momos", "Burgers", "Pizza"] 
 function cleanMenu(arr){
  let cleanArr = [];
  for(let i=0; i<arr.length; i++){
@@ -556,7 +559,7 @@ javascriptconst cart = [
   { name: "Phone Case", price: 500, quantity: 0 },
   { name: "Keyboard", price: 2500, quantity: 1 }
 ];
-Expected Output: 56500 (Explanation: Laptop (500001) + Headphones (20002) + Keyboard (25001) = 50000 + 4000 + 2500)*/
+Expected Output: 56500 (Explanation: Laptop (500001) + Headphones (20002) + Keyboard (25001) = 50000 + 4000 + 2500)
 function calculteTotalPrice(cart){
   let totalPrice = 0;
   for(let i=0; i<cart.length; i++){
@@ -572,11 +575,11 @@ const totalPrice = calculteTotalPrice([{ name: "Laptop", price: 50000, quantity:
   { name: "Phone Case", price: 500, quantity: 0 },
   { name: "Keyboard", price: 2500, quantity: 1 }]);
   console.log(totalPrice);
-/* 2D Arrays & Analytics
+ 2D Arrays & Analytics
 Problem Statement: You are creating a school teacher's dashboard.
 You are given a 2D array where each row represents a single student's test scores in 3 different subjects. 
 Write a JavaScript function that calculates and prints the average score for each student,
-and also identifies if any student failed (if their average score is below 40). */
+and also identifies if any student failed (if their average score is below 40). 
 
 function studentAnalytics(scores) {
 
@@ -603,14 +606,14 @@ studentAnalytics([
 [89, 78, 90],
 [46, 56, 90]]);
 
-/* Task: User Search FilterProblem Statement: 
+Task: User Search FilterProblem Statement: 
 You are building a search bar for a website's dashboard. 
 You are given an array of user names and a search query string.
 Write a JavaScript function that filters the array and returns only the names that contain the search query. 
 The search must be case-insensitive.
 javascript
 const names = ["John Doe", "Jane Smith", "Alice Johnson", "Bob Brown", "Joey"];
-const query = "jo"; */
+const query = "jo"; 
 
 
 function searchFilterName (arr, filter) {
@@ -626,3 +629,89 @@ function searchFilterName (arr, filter) {
 }
 const filterName = searchFilterName(["John Doe", "Jane Smith", "Alice Johnson", "Bob Brown", "Joey"], "jo");
 console.log(filterName);
+
+tranpose matrix
+Problem Statement: Write a JavaScript function to transpose a given 2D matrix. 
+Transposing means converting all the rows into columns and vice versa. 
+function tranposeMatrix (arr) {
+  let matrix = [];
+  for(let i=0; i<arr[0].length; i++) {
+    let newArr = []
+    for(let j=0; j<arr.length; j++){
+      newArr.push(arr[j][i]);
+    }
+    matrix.push(newArr);
+  }
+  return matrix;
+}
+const rowIntoColumn = tranposeMatrix([
+  [2, 4, 6],
+  [5, 8, 9],
+  [8, 5, 2]
+]);
+console.log(rowIntoColumn);
+// Fortune teller 
+function myFortuneTeller(name){
+  let fortune = [
+    "Ajj apko ek achhi khbar sunne ko milegi.",
+    "apki skal ek gahde se milte hai.", 
+    "Tum bhut hoshiyaar ho tum bhut trikki karoge.",
+    "tum jo banna chete ho useme bhut kathniye hai lekin prishrm karte raho tum jaruur safl hoge."
+  ]
+  let randomIndex = Math.floor(Math.random() * fortune.length);
+  return `Hello ${name}! ${fortune[randomIndex]}`;
+}
+const myfoutune = myFortuneTeller("khushi");
+console.log(myfoutune);
+// Hackthon Fortune teller
+function fortuneTeller(name){
+  let fortune = ["ye saal apka bhut achha jayga.",
+    "apko is saal korbaar mai trakki milegi. ❤️",
+    "apko is mahine thoda sambhal kar rahna hoga.",
+    "Apki do mhino mai pooch nikla jayegi nahi to jada sochna band kar do.",
+    "Agr mummy se maar kahana hai to aaj ghr der se jaye."
+  ]
+  let color = ["Red", "Blue", "Black", "Green", "Orange", "Purple"];
+  let colorIndex = Math.floor(Math.random() * color.length);
+  let fortuneIndex = Math.floor(Math.random() * fortune.length);
+  return `Hello ${name}! Ajj apka magal color: ${color[colorIndex]} Ajj apka bhagya: ${fortune[fortuneIndex]}`
+}
+console.log(fortuneTeller("Khuhsi"));
+
+function TranposeMatrix(arr){
+  for(let i=0; i<arr.length; i++){
+    for(let j=0; j<arr[i].length; j++){
+    console.log(arr[i][j]);
+    }
+  }
+}
+TranposeMatrix([[2, 4, 5], 
+[4, 5, 1],
+[3, 7, 9]
+])
+function snaketranspose(arr){
+  let matrix = [];
+  for(let i=0; i<arr.length; i++){
+    if(i % 2 === 0){
+      for(let j=0; j<arr.length; j++){
+        matrix.push(arr[i][j]);
+      }
+    }
+    else{
+      for(let j=arr[i].length-1; j>=0; j--){
+        matrix.push(arr[i][j]);
+      }
+    }
+  }
+}
+
+// Column wise snake traversal
+function columntraversal(){
+  let matrix = [];
+  for(let i=0; i<arr.length; i++){
+    for(let j=arr[i].length; j>=0; j--){
+      matrix.push(arr[j][i]);
+    }
+  }
+}  */
+

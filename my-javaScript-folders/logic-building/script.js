@@ -713,5 +713,24 @@ function columntraversal(){
       matrix.push(arr[j][i]);
     }
   }
-}  */
+}  
+  // ArmStrong Number 
+  // the digit of the number should power of that number or than sum of the porwer of that number num every digit shloud equal to the original number
+  function ArmStrongNumber(m, n){
+    let result = [];
+    for(let i=m; i<=n; i++){
+      let num = i.toString();  // For digitCout use toString property
+      let digit = num.length;
+      let sum = 0;
+      for(let j = 0; j<num.length; j++){
+        let number = Number(num[j]);
+        sum += Math.pow(number, digit);
+      }
+      if(sum === i){
+      result.push(i);
+      }
+    }
+    return result.join(" ");
+  }
+  console.log(ArmStrongNumber(0, 160)); */
 

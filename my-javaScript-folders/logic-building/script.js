@@ -527,3 +527,80 @@ function reverseArray(arr){
 function maxAndMin(arr){
 return [Math.max(...arr), Math.min(...arr)];
 }
+// Task Clean the menu
+/*Problem Statement: You are given an array of food items that contains duplicate items and invalid values like null or undefined. 
+Write a JavaScript function to clean this array so that the output contains only unique and valid food items.
+Input: ["Samose", "Momos", null, "Burgers", "Momos", undefined, "Samose", "Pizza"]
+Expected 
+Output: ["Samose", "Momos", "Burgers", "Pizza"] */
+function cleanMenu(arr){
+ let cleanArr = [];
+ for(let i=0; i<arr.length; i++){
+  if(arr[i] !== null && arr[i] !== undefined && !cleanArr.includes(arr[i])){
+    cleanArr.push(arr[i]);
+  }
+ }
+ return cleanArr;
+}
+const clean = cleanMenu(["Samose", "Momos", null, "Burgers", "Momos", undefined, "Samose", "Pizza"]);
+console.log(clean);
+// Real-World Arrays & Objects 
+/*Problem Statement: You are building a shopping cart for an e-commerce website. You are given an array of items added to the cart. 
+Each item is an object containing name, price, and quantity.
+However, some items have a quantity of 0 (which shouldn't be calculated). 
+Write a JavaScript function to calculate the total price of all valid items in the cart. 
+javascriptconst cart = [
+  { name: "Laptop", price: 50000, quantity: 1 },
+  { name: "Mouse", price: 1000, quantity: 0 },
+  { name: "Headphones", price: 2000, quantity: 2 },
+  { name: "Phone Case", price: 500, quantity: 0 },
+  { name: "Keyboard", price: 2500, quantity: 1 }
+];
+Expected Output: 56500 (Explanation: Laptop (500001) + Headphones (20002) + Keyboard (25001) = 50000 + 4000 + 2500)*/
+function calculteTotalPrice(cart){
+  let totalPrice = 0;
+  for(let i=0; i<cart.length; i++){
+    if(cart[i].quantity > 0){
+      totalPrice += cart[i].price * cart[i].quantity;
+    }
+  }
+  return totalPrice;
+}
+const totalPrice = calculteTotalPrice([{ name: "Laptop", price: 50000, quantity: 1 },
+  { name: "Mouse", price: 1000, quantity: 0 },
+  { name: "Headphones", price: 2000, quantity: 2 },
+  { name: "Phone Case", price: 500, quantity: 0 },
+  { name: "Keyboard", price: 2500, quantity: 1 }]);
+  console.log(totalPrice);
+/* 2D Arrays & Analytics
+Problem Statement: You are creating a school teacher's dashboard.
+You are given a 2D array where each row represents a single student's test scores in 3 different subjects. 
+Write a JavaScript function that calculates and prints the average score for each student,
+and also identifies if any student failed (if their average score is below 40). */
+
+function studentAnalytics(scores) {
+
+  for(let i=0; i<scores.length; i++){
+    let scoreSum = 0;
+    for(let j=0; j<scores[i].length; j++){
+      scoreSum += scores[i][j];
+    }
+    let avarage = scoreSum / scores[i].length;
+     let result = "";
+  if(avarage > 40){
+    result = "Passed";
+  } else {
+    result = "Fail";
+  }
+  
+  console.log(`Student ${i + 1} Average: ${avarage.toFixed(2)} - ${result}`);
+  }
+ 
+}
+studentAnalytics([
+[20, 30, 70], 
+[50, 40, 55],
+[89, 78, 90],
+[46, 56, 90]]);
+
+

@@ -603,4 +603,26 @@ studentAnalytics([
 [89, 78, 90],
 [46, 56, 90]]);
 
+/* Task: User Search FilterProblem Statement: 
+You are building a search bar for a website's dashboard. 
+You are given an array of user names and a search query string.
+Write a JavaScript function that filters the array and returns only the names that contain the search query. 
+The search must be case-insensitive.
+javascript
+const names = ["John Doe", "Jane Smith", "Alice Johnson", "Bob Brown", "Joey"];
+const query = "jo"; */
 
+
+function searchFilterName (arr, filter) {
+  let lowerFilter = filter.toLowerCase();
+  let matchedName = [];
+  for(let i=0; i<arr.length; i++){
+    let lowerName = arr[i].toLowerCase();
+    if(lowerName.includes(lowerFilter)) {
+      matchedName.push(arr[i]);
+    }
+  }
+  return matchedName;
+}
+const filterName = searchFilterName(["John Doe", "Jane Smith", "Alice Johnson", "Bob Brown", "Joey"], "jo");
+console.log(filterName);

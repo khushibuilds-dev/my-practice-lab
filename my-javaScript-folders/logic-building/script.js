@@ -714,10 +714,10 @@ function columntraversal(){
     }
   }
 }  
-  // ArmStrong Number 
-  // the digit of the number should power of that number or than sum of the porwer of that number num every digit shloud equal to the original number
-  function ArmStrongNumber(m, n){
-    let result = [];
+// ArmStrong Number 
+// the digit of the number should power of that number or than sum of the porwer of that number num every digit shloud equal to the original number
+function ArmStrongNumber(m, n){
+  let result = [];
     for(let i=m; i<=n; i++){
       let num = i.toString();  // For digitCout use toString property
       let digit = num.length;
@@ -732,5 +732,32 @@ function columntraversal(){
     }
     return result.join(" ");
   }
-  console.log(ArmStrongNumber(0, 160)); */
+console.log(ArmStrongNumber(0, 160)); 
+
+Triangle Angle Analyzer 
+Write a JavaScript function named checkTriangleType that takes three numbers as arguments representing the angles of a triangle. 
+function should first validate if the angles can form a valid triangle, and then return the specific type of triangle.
+Rules for TrianglesValidity Check: 
+The sum of all three angles must be exactly 180 degrees. Also, no angle can be less than or equal to 0. 
+If it is invalid, return "Invalid Triangle".
+Acute Triangle: All three angles are strictly less than 90 degrees.
+Right Triangle: Exactly one angle is exactly 90 degrees.
+Obtuse Triangle: Exactly one angle is greater than 90 degrees. */
+function checkTriangle(ang1, ang2, ang3){
+  let sum = ang1 + ang2 + ang3;
+  let triangle = "";
+  if(sum !== 180 || ang1 <=0|| ang2 <=0|| ang3 <= 0) {
+    triangle = "Invalid Triangle"
+  } else if(ang1 == 90 || ang2 == 90 || ang3 == 90 ){
+    triangle = "Right Triangle";
+  } else if(ang1 > 90 || ang2 > 90 || ang3 > 90 ) {
+    triangle = "Obtuse Triangle";
+  } else {
+    triangle = "Acute Triangle"
+  }
+  return triangle;
+}
+
+
+
 

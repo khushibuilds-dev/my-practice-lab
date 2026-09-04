@@ -148,7 +148,7 @@ console.log(charStr("hello"));
 
  Row-wise Sum of a 2D Array
 
-*/
+
 
 function rowAdd(arr){
    let newArr = [];
@@ -174,3 +174,23 @@ function max2DArr(arr){
    }
    return max;
 }
+
+Transpose of a MatrixProblem Statement:
+You are given a 2D integer array (matrix) of size \(M \times N\). 
+Your task is to find and return the transpose of the matrix.
+The transpose of a matrix is found by changing rows into columns and columns into rows.
+
+*/
+
+function transposeMat(arr){
+  let row = []
+   for(let i=0; i<arr.length; i++){
+      let newArr = []
+      for(let j=0; j<arr[i].length; j++){
+          newArr.push(arr[j][i]);
+      }
+      row.push(newArr);
+   }
+   return row;
+}
+console.log(transposeMat([[1, 2, 4], [6, 7, 8], [7, 8, 6]]));

@@ -742,7 +742,7 @@ The sum of all three angles must be exactly 180 degrees. Also, no angle can be l
 If it is invalid, return "Invalid Triangle".
 Acute Triangle: All three angles are strictly less than 90 degrees.
 Right Triangle: Exactly one angle is exactly 90 degrees.
-Obtuse Triangle: Exactly one angle is greater than 90 degrees. */
+Obtuse Triangle: Exactly one angle is greater than 90 degrees. 
 function checkTriangle(ang1, ang2, ang3){
   let sum = ang1 + ang2 + ang3;
   let triangle = "";
@@ -756,7 +756,172 @@ function checkTriangle(ang1, ang2, ang3){
     triangle = "Acute Triangle"
   }
   return triangle;
+} 
+Which angled triangle
+Given the 3 sides of a triangle, find out whether it is acute-angled, right-angled, or obtuse-angled.
+
+You need to output 1 for acute, 2 for right-angled, and 3 for an obtuse-angled triangle. You can assume that the input values always form a triangle and are valid integers.
+
+Note:
+
+A triangle is acute-angled, if the square of the largest side is less than the sum of squares of other two sides.
+
+A triangle is obtuse-angled, if the square of its largest side is greater than the sum of squares of other two sides.
+
+A triangle is right-angled, if the square of its largest side is exactly equal to the sum of squares of other two sides.
+
+Input Format
+Line would contain 3 integers which are sides of the triangle.
+
+Output Format
+Return 1 if it is a acute-angled triangle, 2 if it is a right angled triangle and 3 if it is a obtuse-angled triangle 
+ function findLargest(s1, s2, s3){
+  sides = [s1, s2, s3]
+  sides.sort((a, b) => a-b)
+  let [a, b, c] = sides;
+  if((c*c) < (a*a + b*b)) {
+    return 1;
+  } else if((c*c)>(a*a + b*b)) {
+    return 3;
+  } else{
+    return 2;
+  }
 }
+const trianglechecker = findLargest(23, 90 ,23);
+console.log(trianglechecker) 
+
+You want to implement a function that takes an array of integers and returns a new array with all the elements in the original array sorted
+in non-descending order.
+
+Input Format
+First and only line of input contains the array containing integers.
+
+Output Format
+return the sorted array
+
+Example 1
+Input
+
+[1, 2, 4, 3]
+output
+
+[1, 2, 3, 4] 
+//Assecending order
+function sortArr(arr){
+  let sorted = arr.sort((a, b) => a - b);
+  return sorted;
+}
+console.log(sortArr([2, 4, 1]));
+// decending order
+function sortArrDecending(arr) {
+  return arr.sort((b, a) => a-b);
+}
+console.log(sortArrDecending([3, 1, 5, 7]));
+
+You are given a number 'N' and you need to check whether the given number is stronito number or not.
+
+Note: Strontio numbers are those four digits numbers when multiplied by 2 give the same digit at the hundreds and tens place. 
+Remember that the input number must be a four-digit number.
+
+Input Format
+First line contains the number N
+
+Output Format
+Print 1 if it is a stronito number or 0 if it is not.
+
+Example 1
+Input*
+
+1386
+Output
+
+1 
+function CheckStronito(num){
+  let multipliedNum = num*2;
+  let tensDigit = Math.floor(multipliedNum / 10) % 10;
+  let hundrededDigit = Math.floor(multipliedNum / 100) % 10;
+  if(tensDigit === hundrededDigit) {
+    return 1;
+  } else{
+    return 0;
+  }
+}
+
+function multipliedNum(num){
+  let lastDigit = num % 10;
+  let firstDigit = Math.floor(num / 100) % 10;
+  return lastDigit * firstDigit;
+} 
+
+3 Digit SpyNumber Check
+A number is called a Spy Number if the sum of its digits is equal to the product (multiplication) of its digits. 
+Constraint: Input hamesha ek 3-digit number hoga.
+
+Output Format:
+
+Agar Spy number hai toh return karein true, nahi toh false.Example 1:
+
+Input 123Sum of digits = \(1 + 2 + 3 = \mathbf{6}\)Product of digits = \(1 \times 2 \times 3 = \mathbf{6}\)Sinsce 6 === 6,
+Output hona chahiye: true 
+function spyCheck(digit){
+  let num = digit.toString();
+  let sum = 0;
+  let product = 1;
+  for(let i=0; i<num.length; i++){
+    let currentDigit = Number(num[i])
+    sum += currentDigit;
+    product *= currentDigit;
+  }
+  if(sum !== product){
+    return false;
+  } 
+  return true;
+}
+console.log(spyCheck(234)); 
+function spyCheckModulas(num){
+  let ones = num % 10;
+  let tens = Math.floor((num / 10) )% 10;
+  let hundreded = Math.floor((num/100)) % 10;
+  let sum = ones + tens + hundreded;
+  let product = ones*tens*hundreded;
+  if(sum === product){
+    return true;
+  } else{
+    return false;
+  }
+} 
+A number is called a Neon Number if the sum of digits of its square is equal to the number itself.
+Constraint:
+Input hamesha ek single-digit number hoga (0 se 9 ke beech).Output Format: Return karein 1 agar neon number hai, aur 0 agar nahi hai.Example 1:
+Input 9 Pehle square karo: \(9 \times 9 = \mathbf{81}\)Ab square ke digits ka sum karo: \(8 + 1 = \mathbf{9}\)Kyunki sum original number (9) ke barabar hai, 
+Output hona chahiye: 1 
+function neonCheck(num) {
+  let squareDigit = num**2;
+  let ones = squareDigit % 10;
+  let tens = Math.floor((squareDigit / 10)) % 10;
+  let sum = ones + tens;
+  if(sum === num){
+    return 1;
+  } else {
+    return 0;
+  }
+}
+Interview Challenge: Rotate Array Right by 1
+Aapko ek array diya jayega. Aapko us array ke saare elements ko right side mein 1 position aage khiskana (rotate) hai, 
+aur jo sabse aakhiri element hoga, woh ghoomkar sabse pehle (0th index) par aa jayega.Constraint: Aapko naya array nahi banana hai,
+usi original array ke andar hi badlav (in-place modification) karna hai.Output Format: Uss rotated array ko return karein.📋 
+Example 1:Input Array: [1, 2, 3, 4, 5]
+Process:Sabse aakhiri element 5 ghoomkar aage aa jayega.Baaki saare (1, 2, 3, 4) ek-ek step right khisakh jayenge.
+Output: [5, 1, 2, 3, 4] */
+
+function 
+
+
+
+
+
+
+
 
 
 

@@ -129,10 +129,11 @@ function findIndexOfLargestNum(numbers) {
  let consecituive = pairSum([2, 3, 4, 5, 6, 7, 12]);
  console.log(consecituive);
 
-*/
-function charStr(obj) {
+
+
+function charStr(str) {
   let result = {};
-  for(let i=0; i<obj.length; i++){
+  for(let i=0; i<str.length; i++){
    let char = str[i]; 
    
    if (result[char]) {
@@ -143,4 +144,33 @@ function charStr(obj) {
   }
   return result;
 }
-console.log(charCount("hello"));
+console.log(charStr("hello")); 
+
+ Row-wise Sum of a 2D Array
+
+*/
+
+function rowAdd(arr){
+   let newArr = [];
+   for(let i=0; i<arr.length; i++){
+      let sum =0;
+      for(let j=0; j<arr[i].length; j++){
+        sum += arr[i][j]
+      }
+      newArr.push(sum);
+   }
+   return newArr;
+}
+console.log(rowAdd([[2, 3, 4], [2, 6, 7], [7, 8, 9]]));
+
+function max2DArr(arr){
+   let max = arr[0][0];
+   for(let i=0; i<arr.length; i++){
+      for(let j=0; j<arr[i].length; j++){
+         if(arr[i][j]> max){
+            max = arr[i][j];
+         }
+      }
+   }
+   return max;
+}

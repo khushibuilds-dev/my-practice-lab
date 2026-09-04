@@ -1,3 +1,4 @@
+/*
 console.log("increase integer by five");
 num = 4
 function increaseByFive(num) {
@@ -10,35 +11,35 @@ console.log(result);
 
  function checkSecondLastDigit(num) {
     let secondLast =  Math.floor(num/10)%10
-    /*if(secondLast === 0) {
+    if(secondLast === 0) {
         return true;
     } else {
         return false;
-    }*/
+    }
    return secondLast === 0;
  }
 let a = checkSecondLastDigit(120);
 
  console.log(a);
 
- // task Sum of two integer
+ task Sum of two integer
  function sumOfTwo(a, b) {
     return a+b;
  }
 
- // binary to string 
+  binary to string 
 
  function binartyToDecimal(binaryString){
     return parseInt(binaryString, 2);
  }
 
- // Superman name modifier 
+Superman name modifier 
 
  function modifyName(heroName) {
     return `Super ${heroName}`;
  }
 
- // sum of even no. function
+sum of even no. function
   function sumOfEven(n) {
    let sum = 0;
    for (let i = 1; i<=n; i++) {
@@ -78,9 +79,9 @@ row +="#";
 console.log(
    (function (firstName) {
       return `Hello ${firstName}`; // Value bahar bheji
-   })("Khushi") // Yahan function run hua aur value console.log ko mili
+   })("Khushi")   Yahan function run hua aur value console.log ko mili
 );
-// Find smallest number in array creat function for it.
+Find smallest number in array creat function for it.
 
 
 
@@ -114,8 +115,8 @@ function findIndexOfLargestNum(numbers) {
  console.log(index);
 
  // consecutive pair sum in array
- /* [1, 2, 3, 4]
- 1+2,2+3, 3+4 like this is called pair sum */
+  [1, 2, 3, 4]
+ 1+2,2+3, 3+4 like this is called pair sum 
 
  function pairSum(arr) {
    let sum =[];
@@ -128,6 +129,18 @@ function findIndexOfLargestNum(numbers) {
  let consecituive = pairSum([2, 3, 4, 5, 6, 7, 12]);
  console.log(consecituive);
 
- function consecutiveSum (num) {
-   let 
- } 
+*/
+function charStr(obj) {
+  let result = {};
+  for(let i=0; i<obj.length; i++){
+   let char = str[i]; 
+   
+   if (result[char]) {
+      result[char] += 1; 
+    } else {
+      result[char] = 1;  
+    }
+  }
+  return result;
+}
+console.log(charCount("hello"));

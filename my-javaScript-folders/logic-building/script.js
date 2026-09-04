@@ -1,4 +1,4 @@
-/* Reverse string
+ /*Reverse string
 Let I have a string like " khushi " and want to reverse it like this ihsuhk. 
 let str = "Khushi";
 let revWord = ""
@@ -455,7 +455,7 @@ function DiagonalDifference(arr){
 const diagonal = DiagonalDifference([[1, 2, 4,], [1, 4, 6], [2, 4, 5]]);
 console.log(diagonal);
 
-// Print column wise
+ Print column wise
 function ColumnWisePrint(arr) {
   for(let i=0; i<arr[0].length; i++){
     for(let j=0; j<arr.length; j++){
@@ -466,7 +466,7 @@ function ColumnWisePrint(arr) {
 const prinaam = ColumnWisePrint([[1, 2, 3], [2, 4, 3]]);
 console.log(prinaam);
 
-// Primary diagonal sum 
+ Primary diagonal sum 
 function primaryDiagonalSum(arr){
   let sum = 0;
   for(let i=0; i<arr.length; i++){
@@ -477,7 +477,7 @@ function primaryDiagonalSum(arr){
 const primarySum = primaryDiagonalSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
 console.log(primarySum);
 
-// secondary diagonal sum
+secondary diagonal sum
 function secondaryDiagonalSum(arr){
   let sum = 0; 
   for(let i=0; i<arr.length; i++){
@@ -548,7 +548,7 @@ function cleanMenu(arr){
 const clean = cleanMenu(["Samose", "Momos", null, "Burgers", "Momos", undefined, "Samose", "Pizza"]);
 console.log(clean);
 // Real-World Arrays & Objects 
-/*Problem Statement: You are building a shopping cart for an e-commerce website. You are given an array of items added to the cart. 
+Problem Statement: You are building a shopping cart for an e-commerce website. You are given an array of items added to the cart. 
 Each item is an object containing name, price, and quantity.
 However, some items have a quantity of 0 (which shouldn't be calculated). 
 Write a JavaScript function to calculate the total price of all valid items in the cart. 
@@ -714,8 +714,8 @@ function columntraversal(){
     }
   }
 }  
-// ArmStrong Number 
-// the digit of the number should power of that number or than sum of the porwer of that number num every digit shloud equal to the original number
+ArmStrong Number 
+ the digit of the number should power of that number or than sum of the porwer of that number num every digit shloud equal to the original number
 function ArmStrongNumber(m, n){
   let result = [];
     for(let i=m; i<=n; i++){
@@ -806,13 +806,13 @@ Input
 output
 
 [1, 2, 3, 4] 
-//Assecending order
+Assecending order
 function sortArr(arr){
   let sorted = arr.sort((a, b) => a - b);
   return sorted;
 }
 console.log(sortArr([2, 4, 1]));
-// decending order
+decending order
 function sortArrDecending(arr) {
   return arr.sort((b, a) => a-b);
 }
@@ -830,7 +830,7 @@ Output Format
 Print 1 if it is a stronito number or 0 if it is not.
 
 Example 1
-Input*
+Input
 
 1386
 Output
@@ -909,12 +909,19 @@ function neonCheck(num) {
 Interview Challenge: Rotate Array Right by 1
 Aapko ek array diya jayega. Aapko us array ke saare elements ko right side mein 1 position aage khiskana (rotate) hai, 
 aur jo sabse aakhiri element hoga, woh ghoomkar sabse pehle (0th index) par aa jayega.Constraint: Aapko naya array nahi banana hai,
-usi original array ke andar hi badlav (in-place modification) karna hai.Output Format: Uss rotated array ko return karein.📋 
+usi original array ke andar hi badlav (in-place modification) karna hai.Output Format: Uss rotated array ko return karein.
 Example 1:Input Array: [1, 2, 3, 4, 5]
 Process:Sabse aakhiri element 5 ghoomkar aage aa jayega.Baaki saare (1, 2, 3, 4) ek-ek step right khisakh jayenge.
-Output: [5, 1, 2, 3, 4] */
+Output: [5, 1, 2, 3, 4]  */
 
-function 
+
+function rotateArr(arr){
+  let shiftArr = arr.pop();
+  let unshift = arr.unshift(shiftArr);
+  return arr;
+}
+console.log(rotateArr([1, 2, 3, 4]));
+
 
 
 

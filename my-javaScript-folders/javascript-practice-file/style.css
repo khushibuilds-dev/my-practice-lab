@@ -1,5 +1,5 @@
 body {
-   background-color: #fcfc; 
+   background-color: lightblue; 
 }
 
 button {
@@ -14,6 +14,15 @@ border-radius: 5px;
 cursor: pointer;
 }
 
-#increment-btn {
-    background-color: darkred;
+ #plusBtn, #minusBtn{
+    background-color: blue;
+}
+
+.counter {
+ width : 250px;
+ background-color: white;
+ height: 200px;
+ padding: 20px;
+ margin: 10px;
+border-radius: 10px;
 }

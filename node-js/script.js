@@ -123,13 +123,88 @@ function rowWiseMax(mat){
     }
     return row;
 }
+// transpose Matrix
+function transposeMatrix(matrix){
+    let mat = [];
+    for(let i=0; i<matrix[0].length; i++){
+        let newRow = []
+        for(let j=0; j<matrix.length; j++){
+            newRow.push(matrix[j][i]);
+        }
+        mat.push(newRow);
+    }
+    return mat;
+}
+// Faltern 2d Array
+/* इनपुट (Input):javascriptconst matrix = [
+  ['a', 'b'],
+  ['c', 'd'],
+  ['e', 'f']
+];
+आउटपुट (Output): ['a', 'b', 'c', 'd', 'e', 'f'] 
+
+*/
+
+function MatrixArray(arr){
+    let array = [];
+    for(let i=0; i<arr.length; i++){
+        for(let j=0; j<arr[i].length; j++){
+            array.push(arr[i][j]);
+        }
+    }
+return array;
+}
+
+console.log(MatrixArray([
+  ['a', 'b'],
+  ['c', 'd'],
+  ['e', 'f']
+]));
+
+// Sum of all numbers
+function SumOfMatrix(mat){
+    let sum = 0;
+    for(let i=0; i<mat.length; i++){
+      for(let j=0; j<mat[i].length; j++){
+        sum += mat[i][j];
+      }
+    }
+    return sum;
+}
+console.log(SumOfMatrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]]));
+
+// spiral matrix traversal
+/* Problem 
+Statement: Given an m x n matrix, return all elements of the
+matrix in spiral order (starting from top-left, going right, down, left, up, and winding inwards).
+Input: matrix = [, [4, 5, 6], [7, 8, 9] ]
+Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]  */
 
 
+// Transpose Matrix 
 
+/* Input
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]; 
+Output
+ [
+  [1, 4, 7],
+  [2, 5, 8],
+  [3, 6, 9]
+]
+ 
+*/
 
-
-
-
+function matrixTranspose(arr){
+  for(let i=0; i<arr.length; i++){
+    for(let j=0; j<arr[i].length; j++){
+        
+    }
+  }
+}
 
 
 

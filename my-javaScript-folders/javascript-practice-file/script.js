@@ -249,4 +249,19 @@
 // }
 
 // console.log(tipCalculator(2000, 5));
+let count = 0;
 
+const plus = document.getElementById("plusBtn");
+const minus = document.getElementById("minusBtn");
+const counterValue = document.getElementById("counterValue");
+plus.addEventListener("click", function(){
+    count = count + 1;
+    counterValue.innerText = count;
+})
+
+minus.addEventListener("click", function(){
+    if(count > 0){
+    count = count -1;
+}
+    counterValue.innerText = count;
+})

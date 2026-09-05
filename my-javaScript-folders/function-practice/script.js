@@ -180,7 +180,7 @@ You are given a 2D integer array (matrix) of size \(M \times N\).
 Your task is to find and return the transpose of the matrix.
 The transpose of a matrix is found by changing rows into columns and columns into rows.
 
-*/
+
 
 function transposeMat(arr){
   let row = []
@@ -194,3 +194,6 @@ function transposeMat(arr){
    return row;
 }
 console.log(transposeMat([[1, 2, 4], [6, 7, 8], [7, 8, 6]]));
+
+*/
+

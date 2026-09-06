@@ -249,19 +249,59 @@
 // }
 
 // console.log(tipCalculator(2000, 5));
-let count = 0;
+// let count = 0;
 
-const plus = document.getElementById("plusBtn");
-const minus = document.getElementById("minusBtn");
-const counterValue = document.getElementById("counterValue");
-plus.addEventListener("click", function(){
-    count = count + 1;
-    counterValue.innerText = count;
-})
+// const plus = document.getElementById("plusBtn");
+// const minus = document.getElementById("minusBtn");
+// const counterValue = document.getElementById("counterValue");
+// plus.addEventListener("click", function(){
+//     count = count + 1;
+//     counterValue.innerText = count;
+// })
 
-minus.addEventListener("click", function(){
-    if(count > 0){
-    count = count -1;
+// minus.addEventListener("click", function(){
+//     if(count > 0){
+//     count = count -1;
+// }
+//     counterValue.innerText = count;
+// })
+
+//transpose Matrix in place of
+function transposeMatrix(arr){
+    for(let i=0; i<arr.length; i++){
+        for(let j= i + 1; j<arr[i].length; j++){
+            let temp = arr[i][j];
+            arr[i][j] = arr[j][i];
+            arr[j][i] = temp;
+
+        }
+    }
+    return arr;
 }
-    counterValue.innerText = count;
-})
+// tranpose int new array;
+function matrixTranpose(arr){
+    let tranpose = [];
+    for(let i=0; i<arr[0].length; i++){
+        let newRow = [];
+        for(let j=0; j<arr.length; j++){
+            newRow.push(arr[j][i]);
+        }
+        tranpose.push(newRow);
+    }
+    return tranpose;
+}
+// return student name
+function returnName(arr){
+    let student = [];
+    for(let i=0; i<arr.length; i++){
+    
+      let uppercase = arr[i].name.toUpperCase();
+        student.push(uppercase);
+    }
+    return student;
+}
+const studentsList = [
+    { name: "aman", age: 21 },
+    { name: "priya", age: 22 }
+];
+console.log(returnName(studentsList));

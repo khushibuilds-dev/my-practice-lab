@@ -393,4 +393,28 @@ console.log(boundaryTraversal([
 [1, 2, 3],
 [2, 3, 4],
 [1, 2, 5]
-]))
+]));
+
+// 4x4 boundary traverse
+function boundary4x4traverse(arr){
+    let result = []
+    for(let i=0; i<arr[0].length; i++){     // row 1 ke sabhi ko rint kar dega
+        result.push(arr[0][i]);
+    }
+    for(let j=1; j<arr.length; j++){
+        result.push(arr[j][arr.length - 1]);
+    }
+    for(let i=(arr[0].length-1)-1; i>=0; i--){
+        result.push(arr[arr.length -1][i]);
+    }
+    for(let i=(arr.length - 1)-1; i>0; i--){
+        result.push(arr[i][0]);
+    }
+    return result;
+}
+console.log(boundary4x4traverse([
+    [1, 2, 3, 1],
+    [4, 5, 6, 1], 
+    [7, 8, 9, 1], 
+    [9, 8, 7, 1]
+]));

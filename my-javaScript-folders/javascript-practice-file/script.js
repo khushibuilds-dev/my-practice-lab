@@ -360,6 +360,37 @@ console.log(digonalSum([
 
 // Tic Toe Game
 //Boundary traversal
+/*arr[
+[1, 2, 3],
+[2, 3, 4],
+[1, 2, 5]
+]
+
+output [1, 2, 3, 4, 5, 2, 1, 2] */
+
 function boundaryTraversal(arr){
+    let result = [];
+    // 1st row element push hoga 1 2 3
+    for(let r=0; r<arr[0].length; r++){
+        result.push(arr[0][r]);
+    }
+    // last column print hoga 3 ko chooda kar kyu 3 print ho chuka hai 4 5
+    for(let c=1; c<arr.length; c++){
+        result.push(arr[c][2]);
+    }
+    // last row ko push karge vo bhi 5 ko choda kar
+    for(let r =1; r>=0; r--){
+        result.push(arr[2][r]);
+    }
+    // first colum ko print karge lekin ye uper wale 1 or last wlae 1 ko choda kr
+    for(let c=1; c<arr.length -1; c++){
+        result.push(arr[c][0]);
+    }
+return result;
     
 }
+console.log(boundaryTraversal([
+[1, 2, 3],
+[2, 3, 4],
+[1, 2, 5]
+]))

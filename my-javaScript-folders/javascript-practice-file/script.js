@@ -431,3 +431,34 @@ function digitCounter(word, str){
     return count;
 }
 console.log(digitCounter("khushui", "h"));
+function wordCounter(sentence, target){
+    let sentenceArr = sentence.split(" ");
+    let count = 0;
+    for(let i=0; i<sentenceArr.length; i++){
+        if(sentenceArr[i] === target){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(wordCounter("khushi is good and khushi is beautifull", "khushi"));
+
+function upperCase(word){
+    let firstword = word[0].toUpperCase();
+    let lastword = word.slice(1);
+    return firstword + lastword;
+}
+console.log(upperCase("khuhsi"));
+console.log(upperCase("good"));
+function camelCase(sentence){
+    let words = sentence.split(" ");
+    let result = words[0].toLowerCase();
+
+    for(let i=1; i<words.length; i++){
+        let currentword = words[i];
+
+        result += currentword[0].toUpperCase() + currentword.slice(1);
+    }
+    return result
+}
+console.log(camelCase("khushi is good"));

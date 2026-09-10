@@ -305,6 +305,61 @@
 //     { name: "priya", age: 22 }
 // ];
 // console.log(returnName(studentsList));
-function sortArr(){
+function traversalArr(arr){
+    let sum = 0;
+    for(let i=0; i<arr.length; i++){
+        for(let j = 0; j<arr[i].length; j++){
+        sum += arr[i][j];
+        }
+    }
+return sum;
+}
+console.log(traversalArr([[1, 2, 3], [2, 3, 4], [4, 5, 6]]));
+
+// row wise sum 
+function rowWiseSum(arr){
+  let newArr = [];
+  for(let i=0; i<arr.length; i++){
+    let rowSum = 0;
+    for(let j=0; j<arr[i].length; j++){
+        rowSum += arr[i][j]
+    }
+    newArr.push(rowSum);
+  }
+  return newArr;
+}
+console.log(rowWiseSum([[1, 2, 3], [2, 3, 4], [3, 4, 1]]));
+
+// Double even number
+function DoubleEvenNumber(mat){
+    for(let i=0; i<mat.length; i++){
+        for(let j=0; j<mat[i].length; j++){
+            if(mat[i][j] % 2 === 0){
+                mat[i][j] *= 2;
+            }
+        }
+    }
+    return mat;
+}
+console.log(DoubleEvenNumber([[2, 3, 4], [3, 2, 1], [2, 1, 3]]));
+function digonalSum(arr){
+    let diagonaloneSum = 0
+    let diagonalTwo = 0;
+    for(let i=0; i<arr.length; i++){
+      diagonaloneSum += arr[i][i];
+      diagonalTwo += arr[i][arr.length - 1 - i];
+    }
+  
+    return diagonaloneSum + diagonalTwo;
+}
+console.log(digonalSum([
+    [1, 1, 1], 
+    [2, 2, 2], 
+    [1, 1, 1]
+]));
+
+// Tic Toe Game
+//Boundary traversal
+function boundaryTraversal(arr){
     
 }

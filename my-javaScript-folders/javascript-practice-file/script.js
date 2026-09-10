@@ -367,7 +367,7 @@ console.log(digonalSum([
 ]
 
 output [1, 2, 3, 4, 5, 2, 1, 2] */
-
+/*
 function boundaryTraversal(arr){
     let result = [];
     // 1st row element push hoga 1 2 3
@@ -417,4 +417,17 @@ console.log(boundary4x4traverse([
     [4, 5, 6, 1], 
     [7, 8, 9, 1], 
     [9, 8, 7, 1]
-]));
+]));  */
+
+// count string how many times occure in the word
+function digitCounter(word, str){
+    let count = 0;
+    for(let i=0; i<word.length; i++){
+        if(word[i] === str){
+            count ++
+        }
+
+    }
+    return count;
+}
+console.log(digitCounter("khushui", "h"));

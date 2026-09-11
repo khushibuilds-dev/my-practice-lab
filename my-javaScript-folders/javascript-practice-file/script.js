@@ -570,7 +570,10 @@ function countUniqueVowels(word){
 console.log(countUniqueVowels("Khushi has gone"));
 
 // togggle chacter
-
+/*Aapko ek string milegi, aur aapko uske har letter ka case ulta (toggle) karna hai.
+Agar letter Capital (Bada) hai → use Small (Chhota) kar do.
+Agar letter Small (Chhota) hai → use Capital (Bada) kar do.
+*/
 function toggleCharcter(data){
     let result = "";
     for(let char of data){

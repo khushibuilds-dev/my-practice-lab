@@ -464,14 +464,14 @@
 // console.log(camelCase("khushi is good"));
 
 // function CamelCase(sentence){
-//     // word ke according thod kar words ka array banyenge
+//      word ke according thod kar words ka array banyenge
 //     let words = sentence.split(' ');
-//     // ab sabko lower case kar denge
+//      ab sabko lower case kar denge
 //     let result = words[0].toLowerCase();
-//     // ab loop chlal kar har word per jakr sab ko rule ke according change karnge
+//      ab loop chlal kar har word per jakr sab ko rule ke according change karnge
 //     for(let i = 1; i<words.length; i++){  // yaha i = 1 lenge taki taki owrd ka leetr captial na ho baki sb ho jaye
 
-//       // ye  varable is liye taki har word ke ko jaise -1 2 3 sabko lega bari bari 
+//        ye  varable is liye taki har word ke ko jaise -1 2 3 sabko lega bari bari 
 //       let currentword = words[i];
 //       result += currentword[0].toUpperCase() + currentword.slice(1);
 

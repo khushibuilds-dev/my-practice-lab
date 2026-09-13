@@ -602,3 +602,32 @@ function inverseCamelCase(camlecase){
     return result;
 }
 console.log(inverseCamelCase("myNameIsKhushi"));
+function caseChecker(str){
+    let checker = str.toLowerCase();
+    if(str === checker){
+        return "LOWERCASE";
+    } else{
+        return "UPPERCASE";
+    }
+}
+function isOneChecker(str){
+    let firstRow = "qwertyuiop";
+    let secondRow = "asdfghjkl";
+    let thirdRow = "zxcvbnm";
+   let targetRow = ""
+    if(firstRow.includes(str[0])){
+  targetRow = firstRow
+    } else if(secondRow.includes(str[0])){
+        targetRow = secondRow
+    } else if(thirdRow.includes(str[0])){
+        targetRow = thirdRow
+    }
+
+    for(let i=0; i<str.length; i++){
+     if(targetRow.includes(str[i]) === false){
+        return false;
+     }  
+    }
+    return true;
+
+}

@@ -1,4 +1,4 @@
-/*
+
 console.log("increase integer by five");
 num = 4
 function increaseByFive(num) {
@@ -9,42 +9,42 @@ console.log(result);
 
  console.log("Second last digit Zero cheker");
 
- function checkSecondLastDigit(num) {
-    let secondLast =  Math.floor(num/10)%10
-    if(secondLast === 0) {
-        return true;
+function checkSecondLastDigit(num) {
+  let secondLast =  Math.floor(num/10)%10
+   if(secondLast === 0) {
+      return true;
     } else {
-        return false;
+      return false;
     }
    return secondLast === 0;
  }
 let a = checkSecondLastDigit(120);
 
- console.log(a);
+console.log(a);
 
- task Sum of two integer
- function sumOfTwo(a, b) {
-    return a+b;
+//task Sum of two integer
+function sumOfTwo(a, b) {
+   return a+b;
  }
 
-  binary to string 
+//binary to string 
 
- function binartyToDecimal(binaryString){
-    return parseInt(binaryString, 2);
+function binartyToDecimal(binaryString){
+   return parseInt(binaryString, 2);
  }
 
-Superman name modifier 
+//Superman name modifier 
 
- function modifyName(heroName) {
-    return `Super ${heroName}`;
- }
+function modifyName(heroName) {
+  return `Super ${heroName}`;
+}
 
-sum of even no. function
-  function sumOfEven(n) {
-   let sum = 0;
-   for (let i = 1; i<=n; i++) {
-      if (i%2 === 0) {
-         sum = sum + i;
+// sum of even no. function
+function sumOfEven(n) {
+  let sum = 0;
+  for (let i = 1; i<=n; i++) {
+     if (i%2 === 0) {
+      sum = sum + i;
       }
    }
    return sum;
@@ -76,12 +76,11 @@ row +="#";
    }
    console.log(x);
   }
-console.log(
+
    (function (firstName) {
       return `Hello ${firstName}`; // Value bahar bheji
-   })("Khushi")   Yahan function run hua aur value console.log ko mili
-);
-Find smallest number in array creat function for it.
+   })("Khushi")   
+// Find smallest number in array creat function for it.
 
 
 
@@ -94,7 +93,7 @@ function findSmallest(numbers) {
    }
    return smallest;
 }
-    const res = findSmallest([1,2, 3,6, 8,9]);
+// const res = findSmallest([1,2, 3,6, 8,9]);
       console.log(res);
 
 
@@ -115,8 +114,6 @@ function findIndexOfLargestNum(numbers) {
  console.log(index);
 
  // consecutive pair sum in array
-  [1, 2, 3, 4]
- 1+2,2+3, 3+4 like this is called pair sum 
 
  function pairSum(arr) {
    let sum =[];
@@ -134,11 +131,11 @@ function findIndexOfLargestNum(numbers) {
 function charStr(str) {
   let result = {};
   for(let i=0; i<str.length; i++){
-   let char = str[i]; 
+    let char = str[i]; 
    
-   if (result[char]) {
+    if (result[char]) {
       result[char] += 1; 
-    } else {
+   } else {
       result[char] = 1;  
     }
   }
@@ -146,7 +143,7 @@ function charStr(str) {
 }
 console.log(charStr("hello")); 
 
- Row-wise Sum of a 2D Array
+ // Row-wise Sum of a 2D Array
 
 
 
@@ -175,10 +172,10 @@ function max2DArr(arr){
    return max;
 }
 
-Transpose of a MatrixProblem Statement:
-You are given a 2D integer array (matrix) of size \(M \times N\). 
-Your task is to find and return the transpose of the matrix.
-The transpose of a matrix is found by changing rows into columns and columns into rows.
+// Transpose of a MatrixProblem Statement:
+// You are given a 2D integer array (matrix) of size \(M \times N\). 
+// Your task is to find and return the transpose of the matrix.
+// The transpose of a matrix is found by changing rows into columns and columns into rows.
 
 
 
@@ -195,5 +192,5 @@ function transposeMat(arr){
 }
 console.log(transposeMat([[1, 2, 4], [6, 7, 8], [7, 8, 6]]));
 
-*/
+
 

@@ -41,3 +41,110 @@ function bobbleSort(arr){
    }
    return arr;
 }
+
+// SecondLargest
+
+
+// [10, 30, 1, 45, 3, 67]
+ function secondLargest(arr){
+   let firstLarge = -Infinity          // man lete hai ki ki programmming ka sabe chhota num le liya hai 
+   let secondLarge = -Infinity          // yaha per bhi vahi sabse chhota le liya hai kyuki dursa cahiya 
+
+   for(let num of arr){            // ye for of loop hai isi arr ke har ek charcter ko dega
+      if(num > firstLarge){
+         secondLarge = firstLarge        // phir swap kar diya hai secondLarge ko first se 
+         firstLarge = num                // yaha per num ko first ki jagr baita diya hai
+      } else if(num > secondLarge || num !== firstLarge){     // ye else if isliye agr vo first wale se na ho lekin second wale ho bada to usko swap keke age wala mil jaye
+         secondLarge = num                                                                     // isme ye || wala taki duplicate na mile
+      }                         
+   }
+   return secondLarge;
+ }
+ console.log(secondLargest([23, 14, 39, 5, 35]));
+
+
+function getSecondLargest(arr) {
+        // code here
+       let large = -Infinity
+       let secondLarge = -Infinity
+    
+        for(let i=0; i<arr.length; i++){
+            if(arr[i]> large){
+                secondLarge = large;
+                large = arr[i];
+            } else  if(arr[i]>secondLarge && arr[i] !== large){
+                secondLarge = arr[i]
+            }
+        }
+   if(secondLarge === -Infinity){
+       return -1
+   } else{
+       return secondLarge;
+   }
+}
+
+console.log(getSecondLargest([15, 2, 45, 6, 2, 67]));
+
+// Array Leader
+function arrayLeaders(arr){
+   let leader = [];
+   let right = -Infinity
+   for(let i=arr.length-1; i>=0; i--){          // yaha peeche se check karegne kyu right mai uske kuch nahi hoga o vo leader hle se hota hai
+      if(arr[i]>right){
+         leader.push(arr[i]);
+         right = arr[i]
+      }
+   }
+   return leader.reverse();
+}
+
+console.log(arrayLeaders([20, 10, 2, 3, 4, 5, 3]));
+
+// missingnum
+
+function findMissingNum(arr, N){
+  let sum = N *(N+1)/2;               // hame pata hai ki sab sab num ka sum aisa nikal skate hai jo num hai unka sum nikal kar minus kar denge to
+                                             // vo jo missing num hai mil jayega
+ let currentSum = 0
+  for(num of arr){
+    currentSum += num;                          
+  }
+  return sum - currentSum;
+}
+console.log(findMissingNum([1, 3, 4, 5], 5))
+
+function targetSumIndex(arr, target){
+   
+    for(let i=0; i<arr.length; i++){
+  
+      for(let j=0; j<arr.length; j++){
+        if(arr[i] + arr[j] === target){
+            return [i, j];
+        }
+      }
+
+    }
+    return [];
+}
+
+console.log(targetSumIndex([1, 2, 4, 5], 3))
+
+
+// Moves Zero
+
+function movesZeroLast(arr){
+   let movesArr = [];
+   for(let i=0; i<arr.length; i++){
+      if(arr[i] !== 0){
+         movesArr.push(arr[i]);
+      } 
+   }
+
+   for(let i=0; i<arr.length; i++){
+      if(arr[i] === 0){
+         movesArr.push(arr[i])
+      }
+   }
+   return movesArr;
+}
+console.log(movesZeroLast([0, 4, 5, 6, 0, 2, 3]))

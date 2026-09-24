@@ -74,3 +74,49 @@ console.log(result)
 // Task 4: Write a recursive function to calculate the power of a number (\[x^{y}\]), where x is the base and y is the exponent.
 
 
+function decreaseIncreaseRecursion(num){
+    if(num === 0){
+        return;
+    }
+
+    console.log(num)
+    decreaseIncreaseRecursion(num-1)      // isme kya ho raha hai ki har bar recursive laut ja raha hai lekin har baar ka ek line pirntt nahi ho raha hai 
+                                          // balki vo call stack mai save ho rahi hai or jb n 3 hai to 3 save hai jb 2 hai to 2 save hai
+                                          // or jb recursion function kthm ho gya tb vo jo value save ho rahi thi usko print karn suru kar deta hai
+                                          // ye LIFO ke anusar print krta hai mtlb jo baad mai vo phle last first or first last mai 
+    console.log(num);
+}
+console.log(decreaseIncreaseRecursion(4));
+
+                                                    /* isily phle 3 print hau or 3 save ho gya ab 2 print hoga or 2 save hoga recusion ke karn or 1 print hoga or save if ke karn 
+                                                    recursion fail ho gya or ab jo last mai the usko phle prinet kiya 1 phir 2 phir 3 ko */
+
+// Count Vowels
+
+function countVowel(str){
+    if(str === ""){
+        return 0;
+    }
+  if(str[0]==="a" || str[0]==="e" || str[0] === "i" || str[0]=== "o" || str[0]=== "u"){          // ysha se phle letter chekc hoga
+    return 1 + countVowel(str.slice(1))                                      //isme kya hoya phle function chlega ek baar hello letter hoga or phle or 1 se kat gaya last tk ab thik 
+                                                                          // ab yaha se str change ho gya hai ab yaha se kya hoga hello se str naya ab e se bange or
+                                                                           // phir call hoga nya str banega aise hi hota rahega or har baar 1 mai jhota jayega
+
+   } else{
+    return 0 + countVowel(str.slice(1))                                      // vahi same lekin agr vo phelee vlwoe nahi hoga to usenahi count karega
+   }
+
+}
+console.log(countVowel("khushi"));
+
+
+function recursiveArrSum(arr){
+    if(arr.length === 0){
+        return 0;
+    }
+
+     return arr[0] + recursiveArrSum(arr.slice(1));           // har baar rucsion hone har baar ka phle elemnt ko peech wale se plus kar skte hai
+                                                                 // ye hamesa peech se johdta hai jo last mai aya hai use phir upeer  badta hai
+}
+console.log(recursiveArrSum([1, 2, 4]))
+

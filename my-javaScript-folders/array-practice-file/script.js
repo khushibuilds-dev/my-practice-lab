@@ -148,3 +148,18 @@ function movesZeroLast(arr){
    return movesArr;
 }
 console.log(movesZeroLast([0, 4, 5, 6, 0, 2, 3]))
+
+// find missing
+
+// input [1,3,4,5,6]  output 2
+
+function findMissing(N, arr){
+   let sum = N*(N+1)/2
+   let currSum = 0;
+   for(let i=0; i<arr.length; i++){
+      currSum += arr[i];
+   }
+   return sum - currSum;
+}
+
+console.log(findMissing(6, [1,3,4,5,6]))

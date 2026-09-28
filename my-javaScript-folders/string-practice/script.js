@@ -59,3 +59,99 @@ function isAnagram(str1, str2) {
   // Compare the final processed strings
   return cleanAndSort(str1) === cleanAndSort(str2);
 }
+
+/*
+Word Game
+Sara is playing a word game with the following rules:-
+
+The first letter of the word should be the same as the end letter of the previous word
+All words should be unique
+Given N words which Sara has spoken your task is check if Sara is going to win or lose.
+
+Note: - String will contain only lowercase english letters
+
+Input Format
+The first line of input contains a single integer N. The next N line contains a single string each.
+
+Output Format
+Return String after removing the Duplicates.
+*/
+
+function wordGame(N, myArr){
+
+  let uniquieWord = new Set();
+
+  uniquieWord.add(myArr[0]);
+
+  for(let i=1; i<N; i++){
+    let currWord = myArr[i];
+    let preWord = myArr[i-1];
+
+    let firstLetter = currWord[0];
+    let lastPreLetter = preWord[preWord.length - 1]
+    if(firstLetter !== lastPreLetter)  return "Lose";
+
+    if(uniquieWord.has(currWord)) return "Lose";
+
+     uniquieWord.add(currWord);
+  }
+
+  return "win"
+}
+
+function wordGameStr(str){
+  let wordsArr = str.trim().split("\n");
+  let n = parseInt(wordsArr[0]);
+
+  let newArr = new Set();
+  newArr.add(wordsArr[1]);
+
+
+  for(let i=2; i<=n; i++){
+    let curWord = wordsArr[i];
+    let preWord = wordsArr[i-1];
+
+    let firstLetter = curWord[0];
+    let lastLetter = preWord[preWord.length-1];
+
+    if(firstLetter !== lastLetter) return "Lose";
+
+    if(newArr.has(curWord)) return "Lose";
+
+    newArr.add(curWord);
+  }
+  return "Win"
+}
+
+let inputWin = `3
+apple
+egg
+goat`;
+
+console.log("String Function Test 1:", wordGameStr(inputWin)); 
+// Output: "Win"
+
+let inputLoseChain = `3
+apple
+egg
+cat`;
+
+console.log("String Function Test 2:", wordGameStr(inputLoseChain)); 
+// Output: "Lose"
+
+let inputLoseDup = `3
+apple
+egg
+apple`;
+
+console.log("String Function Test 3:", wordGameStr(inputLoseDup)); 
+// Output: "Lose"
+
+
+let myArr1 = ["apple", "egg", "goat"];
+console.log("Array Function Test 1:", wordGame(3, myArr1)); 
+// Output: "win"
+
+let myArr2 = ["apple", "cat", "tiger"];
+console.log("Array Function Test 2:", wordGame(3, myArr2)); 
+// Output: "Lose"

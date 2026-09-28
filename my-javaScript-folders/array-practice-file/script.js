@@ -163,3 +163,123 @@ function findMissing(N, arr){
 }
 
 console.log(findMissing(6, [1,3,4,5,6]))
+
+// Maximum gold in grid
+
+/* 
+You are given a 2-dimensional array of size N x M. 
+It represents a gold mine. Each field in this mine contains a positive integer 
+which is the amount of gold that cell contains. 
+Initially a miner can start from any row in the first column. From a given cell, the miner can move to the
+
+cell diagonally up towards the right to the right to the cell
+
+diagonally down towards the right 
+
+Find out maximum amount of gold which he can collect.
+*/
+
+function maximumGold(arr){
+   const n = arr.length; 
+   if(n===0) return 0;                   // if n =0 return 0;
+
+   const m = arr[0].length;             // column 
+   const dp = Array.from({length: n}, () => Array(m).fill(0));                 // this create new array fill with 0
+
+   for(let i=0; i<n; i++){
+      dp[i][m-1] = arr[i][m-1];
+   }
+
+   // traverse
+
+   for(let col=m-2; col>=0; col--){
+      for(let row =0; row<n; row++){
+         
+         let right = dp[row][col+1];
+         let rightUp = (row-1>=0)?dp[row-1][col+1]: 0;
+         let rightDown = (row+1 <n)?dp[row+1][col+1]: 0;
+
+         dp[row][col] = arr[row][col] + Math.max(right, rightUp, rightDown);
+
+      }
+   }
+
+   let maxGold = 0;
+
+   for(let i=0; i<n; i++){
+      maxGold = Math.max(maxGold, dp[i][0]);
+
+   }
+
+return maxGold;
+
+}
+
+console.log(maximumGold([
+   [2,3,4],
+   [4,3,2],
+   [1,2,3]
+]));
+
+/*  Problem Statement & Rules
+Given an N x M grid of non-negative numbers, find a path from the Top-Left corner (0, 0) to the Bottom-Right corner (N-1, M-1) that minimizes the total sum.
+• Allowed Moves: You can only move Right or Down.
+• No diagonal moves, no moving left, and no moving up.
+*/
+
+function minGold(arr){
+   const n = arr.length; 
+   if(n===0) return 0;
+
+   const m = arr[0].length;
+
+   const dp = Array.from({length: n}, () => Array(m).fill(0));
+
+   dp[n-1][m-1] = arr[n-1][m-1];
+   
+   for(let col = m-2; col>=0; col--){
+      dp[n-1][col] = arr[n-1][col] + dp[n-1][col+1];
+   }
+
+   for(let row = n-2; row>=0; row--){
+      dp[row][m-1] = arr[row][m-1] + dp[row+1][m-1];
+   }
+
+   // traverse
+
+   for(let row = n-2; row>=0; row--){
+      for(let col = m-2; col>=0; col--){
+
+         let right = dp[row][col+1];
+         let down = dp[row+1][col];
+         
+         dp[row][col] = arr[row][col] + Math.min(right, down);
+
+      }
+   }
+
+   return dp[0][0];
+}
+
+console.log(minGold([
+   [2,3,4],
+   [5,3,2],
+   [4,1,5]
+]));
+
+
+/*  Add Average to Array
+Aapko ek function likhna hai jo ek numbers ka array (myArr) lega. 
+Aapko us array ka average (ausat) nikalna hai, aur fir us average ko array ke bilkul aakhri mein jodna (add karna) hai. 
+End mein aapko woh naya array return karna hai.*/
+
+function addAverageToArray(arr){
+   let sum = 0
+   for(let i=0; i<arr.length; i++){
+     sum += arr[i];
+   }
+   arr.push(sum/arr.length);
+   return arr;
+}
+
+

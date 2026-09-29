@@ -283,3 +283,26 @@ function addAverageToArray(arr){
 }
 
 
+/*Unique Paths
+You are given two integers m and n, representing the dimensions of a matrix. Your task is to start from the upper left position, i.e. (0, 0) and end up at the bottom right cell, 
+i.e. (m - 1, n - 1) with the condition that you can only travel either downwards or rightwards, 
+i.e. from (r, c) you can go to either (r + 1, c) or (r, c + 1).*/
+
+function uniquePathCounter(arr){
+   const n = arr.length;
+   if(n === 0) return 0;
+   const m = arr[0].length;
+   const dp = Array.from({length: n}, () => Array(m).fill(1));
+   
+   for(let row = 1; row<n; row++){
+      for(let col =1; col<m; col++){
+         dp[row][col] = dp[row-1][col] + dp[row][col-1];
+      }
+   } 
+  return dp[n-1][m-1];
+}
+
+console.log(uniquePathCounter([
+[2, 2],
+[1, 1]
+]))

@@ -225,3 +225,85 @@ console.log(minChangeToMakePallindrome("abc"));
 function nonRepeatingChracter(str){
   
 } 
+
+// string encoding
+
+function strCounter(str){
+  let result = "";
+let count = 1;
+
+for(let i=0; i<str.length; i++){
+  if(str[i] === str[i+1]){
+    count++;
+  } else{
+    result += count+str[i];
+    count = 1;
+  }
+
+}
+return result;
+}
+
+console.log(strCounter("xxsssd"));
+
+// base64 encoding
+
+function myEncoder(text){
+  return btoa(text);
+
+}
+
+function myDecoder(encoded){
+return atob(encoded)
+}
+
+let secret = "Learn JavaScript"
+let encoded = myEncoder(secret);
+let decoder = myDecoder(encoded);
+
+console.log("Secret msg:", encoded);
+console.log("realMSg:", decoder);
+
+// URL Encoding
+
+function objectToQueryString(object){
+  let arr = [];
+  for(key in object){
+    let encodeKey = encodeURIComponent(key);
+    let encodeValue = encodeURIComponent(object[key]);
+    arr.push(encodeKey+"="+encodeValue);
+  }
+
+  return arr.join("&");
+}
+let data = {
+  "name": "khushi",
+  "goal": "web developer",
+  "birthday": "4th may 2007"
+}
+
+console.log(objectToQueryString(data))
+
+// dp encoding string
+
+function countStrEncoding(str){
+  if(str.length === 0) return 1;
+  if(str[0] === "0") return 0;
+  
+  let count = 0;
+
+  let remain = str.substring(1);
+
+  count += countStrEncoding(remain);
+  
+  if(str.length >=2){
+    let str2 = str.substring(0, 2);
+    let num = parseInt(str2);
+    if(num >= 10 && num <=26){
+      let num2 = str.substring(2)
+      count+= countStrEncoding(num2);
+    }
+  }
+  return count
+}
+console.log(countStrEncoding("123"));

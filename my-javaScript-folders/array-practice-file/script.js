@@ -305,4 +305,37 @@ function uniquePathCounter(arr){
 console.log(uniquePathCounter([
 [2, 2],
 [1, 1]
-]))
+]));
+
+// Count aMaze Path
+
+function countMazePath(arr){
+   let n = arr.length;
+   if(n === 0) return 0;
+   let m = arr[0].length;
+   let dp = Array.from({length: n}, () => Array(m).fill(0));
+
+   dp[0][0] = 1; 
+   
+   for(let row = 0; row<n; row++){
+      dp[row][0] = dp[row-1][0];
+   }
+
+   for(let col = 0; col<m; col++){
+      dp[0][col] = dp[0][c0l-1];
+   }
+
+  for(let row=1; row<n; row++){
+   for(let col=1; col<m; col++){
+      dp[row][col] = dp[row-1][col] + dp[row][col-1];
+   }
+  }
+ 
+  return dp[n-1][m-1];
+}
+
+// Climbling Stairs
+
+function climblingStairs(arr){
+   
+}

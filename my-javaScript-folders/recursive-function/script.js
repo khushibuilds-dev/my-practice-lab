@@ -120,3 +120,57 @@ function recursiveArrSum(arr){
 }
 console.log(recursiveArrSum([1, 2, 4]))
 
+
+// Maze Unique Path Counter
+
+
+function recursiveMazeCounter(arr){
+   let n = arr.length;
+   let m = arr[0].length;
+   function helper(row, col){
+      if(row>=n || col>= m) return 0;
+      if(row === n-1 && col === m-1) return 1;
+      
+      let right = helper(row, col+1);
+      let down = helper(row+1, col);
+      return right+ down;
+   }
+
+   return helper(0, 0);
+}
+
+/*You are given an m x n integer array grid named obstacleGrid. A robot is initially located at the top-left corner, i.e., 
+grid[0][0]. The robot tries to move to the bottom-right corner, i.e., grid[m - 1][n - 1]. 
+The robot can only move either down or right at any point in time.
+An obstacle and space are marked as 1 and 0 respectively in the grid. 
+A path that the robot takes cannot include any square that is an obstacle.
+Return the number of possible unique paths that the robot can take to reach the bottom-right corner.*/
+
+function obstacleGridMazeCounter(arr){
+   let n = arr.length;
+   let m = arr[0].length;
+
+   function helper(row, col){
+    if(row>=n || col>=m) return 0;
+
+    if(arr[row][col] === 1) return 0;
+    if(row === n-1 && col === m-1) return 1;
+
+    let right = helper(row, col+1);
+    let down = helper(row+1, col);
+    
+
+      return right + down;
+    
+   }
+   return helper(0, 0);
+}
+
+// fibonacci Series
+
+function fibonacciSeries(n){
+    if(n <= 1) return n;
+
+    return fibonacciSeries(n-1) + fibonacciSeries(n-2);
+}
+console.log(fibonacciSeries(8));

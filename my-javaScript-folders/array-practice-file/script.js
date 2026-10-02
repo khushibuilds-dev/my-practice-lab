@@ -317,11 +317,11 @@ function countMazePath(arr){
 
    dp[0][0] = 1; 
    
-   for(let row = 0; row<n; row++){
+   for(let row = 1; row<n; row++){
       dp[row][0] = dp[row-1][0];
    }
 
-   for(let col = 0; col<m; col++){
+   for(let col = 1; col<m; col++){
       dp[0][col] = dp[0][c0l-1];
    }
 
@@ -334,8 +334,42 @@ function countMazePath(arr){
   return dp[n-1][m-1];
 }
 
-// Climbling Stairs
+/*Unique Paths (Standard Maze Path)
+Problem Statement:
+There is a robot on an m x n grid. The robot is initially located at the top-left corner, i.e., grid[0][0].
+The robot tries to move to the bottom-right corner, i.e., grid[m - 1][n - 1]. 
+The robot can only move either down or right at any point in time.
+Given the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right 
+corner. */
 
-function climblingStairs(arr){
-   
+function uniqueMazePathCounter(arr){
+   let n = arr.length;
+   let m = arr[0].length;
+
+   let dp = Array.from({length: n}, () => Array(m).fill(0));
+
+   dp[0][0] = 1;
+
+   for(let row = 1; row<n; row++){
+      dp[row][0] = dp[row -1][0];
+   }
+
+   for(let col = 1; col<m; col++){
+      dp[0][col] = dp[0][col-1];
+   }
+
+   for(let row = 1; row<n; row++){
+      for(let col = 1; col<m; col++){
+         dp[row][col] = dp[row-1][col] + dp[row][col-1];
+      }
+   }
+   return dp[n-1][m-1];
 }
+console.log(uniqueMazePathCounter([
+   [1,2,3],
+   [2,3,4],
+   [4,3,2]
+]));
+
+
+

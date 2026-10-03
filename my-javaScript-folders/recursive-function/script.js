@@ -174,3 +174,38 @@ function fibonacciSeries(n){
     return fibonacciSeries(n-1) + fibonacciSeries(n-2);
 }
 console.log(fibonacciSeries(8));
+
+// simple path finding
+/*Problem: You are given an N × M grid. You start at the top-left corner (0, 0) and 
+want to reach the bottom-right corner (N-1, M-1). 
+You can only move Down or Right. 
+Write a JavaScript function countPaths(N, M) that returns the total number of unique paths to reach the destination.
+• Example: countPaths(3, 3) should return 6.
+• Bonus Challenge: Can you optimize it to run in \(O(N \times M)\) time using dynamic programming? */
+
+
+function pathfinding(n, m){
+
+let dp = Array.from({length: n}, () => Array(m).fill(0));
+
+dp[0][0] = 1;
+
+for(let row=0; row<n; row++){
+    dp[row][0] = 1;
+}
+
+for(let col=0; col<m; col++){
+    dp[0][col] = 1;
+}
+
+for(let row=1; row<n; row++){
+    for(let col=1; col<m; col++){
+        dp[row][col] = dp[row-1][col] + dp[row][col-1];
+    }
+}
+
+return dp[n-1][m-1];
+
+}
+
+console.log(pathfinding(3,3));

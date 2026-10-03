@@ -372,4 +372,41 @@ console.log(uniqueMazePathCounter([
 ]));
 
 
+/*Problem: You are given an N × M grid. You start at the top-left corner (0, 0) and 
+want to reach the bottom-right corner (N-1, M-1). 
+You can only move Down or Right. 
+Write a JavaScript function countPaths(N, M) that returns the total number of unique paths to reach the destination.
+• Example: countPaths(3, 3) should return 6.
+• Bonus Challenge: Can you optimize it to run in \(O(N \times M)\) time using dynamic programming? */
+
+function pathCountWithSpaceComplexity(n, m){
+   // 1. Sabse pehle 1D array banaya aur '1' se fill kiya.
+   // Ye hamari sabse pehli line (Row 0) ko represent karta hai.
+
+   let dp = Array(m).fill(1);   // e.g., [1, 1, 1]
+
+   // 2. Row 0 ka kaam ho gaya, ab bache hue rows (1 se lekar n-1 tak) ke liye loop chalega.
+
+   for(let row = 1; row<n; row++){
+
+      // 3. Har row ke andar, column 1 se start karenge (kyuki col 0 hamesha 1 hi rahega).
+
+      for(let col=1; co<m; col++){
+
+         // Current cell ki nayi value = purani value (jo upar se aayi) + pichli value (jo left se aayi)
+         // Yahan hum jahan hain (dp[col]) usme theek apne peeche wale (dp[col-1]) ko add kar rahe hain.
+
+         dp[col] = dp[col] + dp[col-1];
+      }
+   }
+
+     // Loop ke chalne par array aise badlega:
+      // Pehli baar loop chalne ke baad (Row 1): array [1, 2, 3] ban jayega.
+      // Agli baar loop chalne ke baad (Row 2): array [1, 3, 6] ban jayega.
+      // Ye process har row ke liye chalta rahega jab tak grid khatam nahi hota.
+   return   dp[m-1];
+}
+console.log(pathCountWithSpaceComplexity(3, 3)); // Output: 6 
+
+
 

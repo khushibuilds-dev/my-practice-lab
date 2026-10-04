@@ -307,3 +307,16 @@ function countStrEncoding(str){
   return count
 }
 console.log(countStrEncoding("123"));
+
+// first non repeating chracter
+
+function firstNonReaptingChracter(str){
+  for(let char of str){
+    if(str.indexOf(char) === str.lastIndexOf(char)){
+      return char;
+    }
+  }
+  return null;
+}
+
+console.log(firstNonReaptingChracter("aaddc"));

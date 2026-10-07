@@ -87,9 +87,94 @@ function mapUsersPremiumClean(users){
 }
 
 console.log(mapUsersPremiumClean(users));
+/*Task 1: Map ka use karke Prices badhao (.map())
+Scenario: Aapke paas ek products ke prices ki array hai. Aapko sabhi products ke daam par 18% GST jodkar ek nayi array banani hai.
+• Input Array: const prices = [100, 500, 1200, 50];
+• Task: Ek naya array banao jismein har price par 18% tax added ho. */
+const prices = [100, 500, 1200, 50];
+
+const pricesWithGST = prices.map(price => price + (price * 0.18));
+
+console.log("Original Prices:", prices);
+console.log("Prices with 18% GST:", pricesWithGST); 
+// Output: [118, 590, 1416, 3540]
 
 
+/*Task 3: Total Cart Value calculate karo (.reduce())
+Scenario: Ek shopping cart hai jismein multiple items hain. Aapko un sabhi items ka total bill amount calculate karna hai.*/
 
+const cart = [
+  { product: "Phone", price: 15000 },
+  { product: "Cover", price: 300 },
+  { product: "Charger", price: 700 }
+];
+
+// .reduce() se sabhi prices ka sum nikalna
+const totalBill = cart.reduce((accumulator, currentItem) => {
+  return accumulator + currentItem.price;
+}, 0); // 0 yahan initial value hai
+
+console.log("Total Bill Amount: ₹" + totalBill); 
+// Output: Total Bill Amount: ₹16000
+
+
+// Custom Higher-Order Function (Callback execution)
+
+// Yeh function ek dusre function (action) ko argument me le raha hai
+function repeatTask(n, action) {
+  for (let i = 0; i < n; i++) {
+    action(i + 1); // Callback function ko call kiya
+  }
+}
+
+// Usage: Humne ek anonymous function pass kiya jo print karega
+repeatTask(3, (times) => {
+  console.log(`Hello! Yeh baar number ${times} hai.`);
+});
+/* Output:
+Hello! Yeh baar number 1 hai.
+Hello! Yeh baar number 2 hai.
+Hello! Yeh baar number 3 hai.
+*/
+
+//  Function Returning Function (Greeting Generator)
+
+//  Yeh function ek naya function return karta hai (Closure concept)
+function createGreeter(greetingType) {
+  return function(name) {
+    console.log(`${greetingType}, ${name}!`);
+  };
+}
+
+// Do alag tarah ke greeters banaye
+const morningWelcome = createGreeter("Good Morning");
+const eveningWelcome = createGreeter("Good Evening");
+
+// Ab in return hue functions ko use kiya
+morningWelcome("Aman");  // Output: Good Morning, Aman!
+eveningWelcome("Karan"); // Output: Good Evening, Karan!
+
+
+const userss = [
+  { name: "Rahul", age: 25 },
+  { name: "Sneha", age: 16 },
+  { name: "Amit", age: 17 },
+  { name: "Priya", age: 30 }
+];
+
+// Sirf unhein filter karein jinki age 18 ya usse zyada hai
+const eligibleVoters = userss.filter(user => user.age >= 18);
+
+console.log(eligibleVoters);
+/* Output:
+[
+  { name: 'Rahul', age: 25 },
+  { name: 'Priya', age: 30 }
+]
+*/
+
+/*Scenario: Ek company ke employees ka data hai. Aapko sirf un 
+employees ki total salary nikalni hai jo "IT" department mein hain aur jinki salary 50,000 se zyada hai.
 
 
 

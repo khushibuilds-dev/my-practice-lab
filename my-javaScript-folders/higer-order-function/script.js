@@ -173,8 +173,7 @@ console.log(eligibleVoters);
 ]
 */
 
-/*Scenario: Ek company ke employees ka data hai. Aapko sirf un 
-employees ki total salary nikalni hai jo "IT" department mein hain aur jinki salary 50,000 se zyada hai.
+
 
 
 

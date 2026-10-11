@@ -402,3 +402,18 @@ function pathCountWithSpaceComplexity(n, m) {
   return dp[m - 1];
 }
 console.log(pathCountWithSpaceComplexity(3, 3)); // Output: 6
+
+/*Given an array of integers. Compute recursively the number of times that the value 11 appears in the array. We'll use the convention of considering only the part of the array that begins at the given index. In this way, a recursive call can pass index+1 to move down the array. The initial call will pass in the index as 0.
+
+array11([1, 2, 11], 0) → 1
+*/
+
+function array11(nums, index){
+  if(index >= nums.length) return 0;
+
+  if(nums[index] === 11){
+    return 1 + array11(nums, index+1);
+  }
+
+  return array11(nums, index+1);
+}
